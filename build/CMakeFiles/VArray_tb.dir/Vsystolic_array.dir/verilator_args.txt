@@ -1,0 +1,1 @@
+/Users/anirudhsinghair/Developer/verilator-v4.224/bin/verilator_bin;--compiler;clang;--prefix;Vsystolic_array;--Mdir;/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/VArray_tb.dir/Vsystolic_array.dir;--make;cmake;--coverage;--trace;--sc;systolic_array.v;pe.v
