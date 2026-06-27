@@ -1,4 +1,4 @@
-// Verilated -*- SystemC -*-
+// Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Design implementation internals
 // See Vsystolic_array.h for the primary calling header
 
@@ -11,14 +11,6 @@ void Vsystolic_array___024root___ctor_var_reset(Vsystolic_array___024root* vlSel
 
 Vsystolic_array___024root::Vsystolic_array___024root(Vsystolic_array__Syms* symsp, const char* name)
     : VerilatedModule{name}
-    , clk("clk")
-    , reset("reset")
-    , weight_load("weight_load")
-    , weight_row_sel("weight_row_sel")
-    , weight_data("weight_data")
-    , act_col_in("act_col_in")
-    , psum_bottom_out("psum_bottom_out")
-    , psum_array_out("psum_array_out")
     , vlSymsp{symsp}
  {
     // Reset structure values

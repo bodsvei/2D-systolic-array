@@ -1,4 +1,4 @@
-// Verilated -*- SystemC -*-
+// Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Symbol table implementation internals
 
 #include "Vsystolic_array__Syms.h"

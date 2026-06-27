@@ -1,4 +1,4 @@
-// Verilated -*- SystemC -*-
+// Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Design implementation internals
 // See Vsystolic_array.h for the primary calling header
 
@@ -13,7 +13,7 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
     VL_DEBUG_IF(VL_DBG_MSGF("+        Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__g_row__BRA__0__KET____DOT__g_col__BRA__0__KET____DOT__pe_inst__0\n"); );
     // Body
     ++(vlSymsp->__Vcoverage[396]);
-    if (vlSymsp->TOP.__Vcellinp__systolic_array__reset) {
+    if (vlSymsp->TOP.reset) {
         ++(vlSymsp->__Vcoverage[394]);
         vlSelf->act_out = 0U;
         vlSelf->psum_out = 0U;
@@ -26,10 +26,10 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
                                         (vlSymsp->TOP.systolic_array__DOT__act_h
                                          [0U][0U] * (IData)(vlSelf->__PVT__weight))));
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__0__KET____DOT__g_col__BRA__0__KET____DOT__pe_inst__weight_load) {
-            vlSelf->__PVT__weight = (0xffU & vlSymsp->TOP.__Vcellinp__systolic_array__weight_data);
+            vlSelf->__PVT__weight = (0xffU & vlSymsp->TOP.weight_data);
         }
     }
-    if ((1U & (~ (IData)(vlSymsp->TOP.__Vcellinp__systolic_array__reset)))) {
+    if ((1U & (~ (IData)(vlSymsp->TOP.reset)))) {
         ++(vlSymsp->__Vcoverage[395]);
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__0__KET____DOT__g_col__BRA__0__KET____DOT__pe_inst__weight_load) {
             ++(vlSymsp->__Vcoverage[392]);
@@ -453,7 +453,7 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
     VL_DEBUG_IF(VL_DBG_MSGF("+        Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__g_row__BRA__0__KET____DOT__g_col__BRA__1__KET____DOT__pe_inst__0\n"); );
     // Body
     ++(vlSymsp->__Vcoverage[396]);
-    if (vlSymsp->TOP.__Vcellinp__systolic_array__reset) {
+    if (vlSymsp->TOP.reset) {
         ++(vlSymsp->__Vcoverage[394]);
         vlSelf->act_out = 0U;
         vlSelf->psum_out = 0U;
@@ -466,11 +466,11 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
                                         (vlSymsp->TOP.systolic_array__DOT__act_h
                                          [0U][1U] * (IData)(vlSelf->__PVT__weight))));
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__0__KET____DOT__g_col__BRA__1__KET____DOT__pe_inst__weight_load) {
-            vlSelf->__PVT__weight = (0xffU & (vlSymsp->TOP.__Vcellinp__systolic_array__weight_data 
+            vlSelf->__PVT__weight = (0xffU & (vlSymsp->TOP.weight_data 
                                               >> 8U));
         }
     }
-    if ((1U & (~ (IData)(vlSymsp->TOP.__Vcellinp__systolic_array__reset)))) {
+    if ((1U & (~ (IData)(vlSymsp->TOP.reset)))) {
         ++(vlSymsp->__Vcoverage[395]);
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__0__KET____DOT__g_col__BRA__1__KET____DOT__pe_inst__weight_load) {
             ++(vlSymsp->__Vcoverage[392]);
@@ -894,7 +894,7 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
     VL_DEBUG_IF(VL_DBG_MSGF("+        Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__g_row__BRA__0__KET____DOT__g_col__BRA__2__KET____DOT__pe_inst__0\n"); );
     // Body
     ++(vlSymsp->__Vcoverage[396]);
-    if (vlSymsp->TOP.__Vcellinp__systolic_array__reset) {
+    if (vlSymsp->TOP.reset) {
         ++(vlSymsp->__Vcoverage[394]);
         vlSelf->act_out = 0U;
         vlSelf->psum_out = 0U;
@@ -907,11 +907,11 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
                                         (vlSymsp->TOP.systolic_array__DOT__act_h
                                          [0U][2U] * (IData)(vlSelf->__PVT__weight))));
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__0__KET____DOT__g_col__BRA__2__KET____DOT__pe_inst__weight_load) {
-            vlSelf->__PVT__weight = (0xffU & (vlSymsp->TOP.__Vcellinp__systolic_array__weight_data 
+            vlSelf->__PVT__weight = (0xffU & (vlSymsp->TOP.weight_data 
                                               >> 0x10U));
         }
     }
-    if ((1U & (~ (IData)(vlSymsp->TOP.__Vcellinp__systolic_array__reset)))) {
+    if ((1U & (~ (IData)(vlSymsp->TOP.reset)))) {
         ++(vlSymsp->__Vcoverage[395]);
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__0__KET____DOT__g_col__BRA__2__KET____DOT__pe_inst__weight_load) {
             ++(vlSymsp->__Vcoverage[392]);
@@ -1335,7 +1335,7 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
     VL_DEBUG_IF(VL_DBG_MSGF("+        Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__g_row__BRA__0__KET____DOT__g_col__BRA__3__KET____DOT__pe_inst__0\n"); );
     // Body
     ++(vlSymsp->__Vcoverage[396]);
-    if (vlSymsp->TOP.__Vcellinp__systolic_array__reset) {
+    if (vlSymsp->TOP.reset) {
         ++(vlSymsp->__Vcoverage[394]);
         vlSelf->act_out = 0U;
         vlSelf->psum_out = 0U;
@@ -1348,11 +1348,11 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
                                         (vlSymsp->TOP.systolic_array__DOT__act_h
                                          [0U][3U] * (IData)(vlSelf->__PVT__weight))));
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__0__KET____DOT__g_col__BRA__3__KET____DOT__pe_inst__weight_load) {
-            vlSelf->__PVT__weight = (vlSymsp->TOP.__Vcellinp__systolic_array__weight_data 
+            vlSelf->__PVT__weight = (vlSymsp->TOP.weight_data 
                                      >> 0x18U);
         }
     }
-    if ((1U & (~ (IData)(vlSymsp->TOP.__Vcellinp__systolic_array__reset)))) {
+    if ((1U & (~ (IData)(vlSymsp->TOP.reset)))) {
         ++(vlSymsp->__Vcoverage[395]);
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__0__KET____DOT__g_col__BRA__3__KET____DOT__pe_inst__weight_load) {
             ++(vlSymsp->__Vcoverage[392]);
@@ -1776,7 +1776,7 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
     VL_DEBUG_IF(VL_DBG_MSGF("+        Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__g_row__BRA__1__KET____DOT__g_col__BRA__0__KET____DOT__pe_inst__0\n"); );
     // Body
     ++(vlSymsp->__Vcoverage[396]);
-    if (vlSymsp->TOP.__Vcellinp__systolic_array__reset) {
+    if (vlSymsp->TOP.reset) {
         ++(vlSymsp->__Vcoverage[394]);
         vlSelf->act_out = 0U;
         vlSelf->psum_out = 0U;
@@ -1789,10 +1789,10 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
                                         (vlSymsp->TOP.systolic_array__DOT__act_h
                                          [1U][0U] * (IData)(vlSelf->__PVT__weight))));
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__1__KET____DOT__g_col__BRA__0__KET____DOT__pe_inst__weight_load) {
-            vlSelf->__PVT__weight = (0xffU & vlSymsp->TOP.__Vcellinp__systolic_array__weight_data);
+            vlSelf->__PVT__weight = (0xffU & vlSymsp->TOP.weight_data);
         }
     }
-    if ((1U & (~ (IData)(vlSymsp->TOP.__Vcellinp__systolic_array__reset)))) {
+    if ((1U & (~ (IData)(vlSymsp->TOP.reset)))) {
         ++(vlSymsp->__Vcoverage[395]);
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__1__KET____DOT__g_col__BRA__0__KET____DOT__pe_inst__weight_load) {
             ++(vlSymsp->__Vcoverage[392]);
@@ -2216,7 +2216,7 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
     VL_DEBUG_IF(VL_DBG_MSGF("+        Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__g_row__BRA__1__KET____DOT__g_col__BRA__1__KET____DOT__pe_inst__0\n"); );
     // Body
     ++(vlSymsp->__Vcoverage[396]);
-    if (vlSymsp->TOP.__Vcellinp__systolic_array__reset) {
+    if (vlSymsp->TOP.reset) {
         ++(vlSymsp->__Vcoverage[394]);
         vlSelf->act_out = 0U;
         vlSelf->psum_out = 0U;
@@ -2229,11 +2229,11 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
                                         (vlSymsp->TOP.systolic_array__DOT__act_h
                                          [1U][1U] * (IData)(vlSelf->__PVT__weight))));
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__1__KET____DOT__g_col__BRA__1__KET____DOT__pe_inst__weight_load) {
-            vlSelf->__PVT__weight = (0xffU & (vlSymsp->TOP.__Vcellinp__systolic_array__weight_data 
+            vlSelf->__PVT__weight = (0xffU & (vlSymsp->TOP.weight_data 
                                               >> 8U));
         }
     }
-    if ((1U & (~ (IData)(vlSymsp->TOP.__Vcellinp__systolic_array__reset)))) {
+    if ((1U & (~ (IData)(vlSymsp->TOP.reset)))) {
         ++(vlSymsp->__Vcoverage[395]);
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__1__KET____DOT__g_col__BRA__1__KET____DOT__pe_inst__weight_load) {
             ++(vlSymsp->__Vcoverage[392]);
@@ -2657,7 +2657,7 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
     VL_DEBUG_IF(VL_DBG_MSGF("+        Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__g_row__BRA__1__KET____DOT__g_col__BRA__2__KET____DOT__pe_inst__0\n"); );
     // Body
     ++(vlSymsp->__Vcoverage[396]);
-    if (vlSymsp->TOP.__Vcellinp__systolic_array__reset) {
+    if (vlSymsp->TOP.reset) {
         ++(vlSymsp->__Vcoverage[394]);
         vlSelf->act_out = 0U;
         vlSelf->psum_out = 0U;
@@ -2670,11 +2670,11 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
                                         (vlSymsp->TOP.systolic_array__DOT__act_h
                                          [1U][2U] * (IData)(vlSelf->__PVT__weight))));
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__1__KET____DOT__g_col__BRA__2__KET____DOT__pe_inst__weight_load) {
-            vlSelf->__PVT__weight = (0xffU & (vlSymsp->TOP.__Vcellinp__systolic_array__weight_data 
+            vlSelf->__PVT__weight = (0xffU & (vlSymsp->TOP.weight_data 
                                               >> 0x10U));
         }
     }
-    if ((1U & (~ (IData)(vlSymsp->TOP.__Vcellinp__systolic_array__reset)))) {
+    if ((1U & (~ (IData)(vlSymsp->TOP.reset)))) {
         ++(vlSymsp->__Vcoverage[395]);
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__1__KET____DOT__g_col__BRA__2__KET____DOT__pe_inst__weight_load) {
             ++(vlSymsp->__Vcoverage[392]);
@@ -3098,7 +3098,7 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
     VL_DEBUG_IF(VL_DBG_MSGF("+        Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__g_row__BRA__1__KET____DOT__g_col__BRA__3__KET____DOT__pe_inst__0\n"); );
     // Body
     ++(vlSymsp->__Vcoverage[396]);
-    if (vlSymsp->TOP.__Vcellinp__systolic_array__reset) {
+    if (vlSymsp->TOP.reset) {
         ++(vlSymsp->__Vcoverage[394]);
         vlSelf->act_out = 0U;
         vlSelf->psum_out = 0U;
@@ -3111,11 +3111,11 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
                                         (vlSymsp->TOP.systolic_array__DOT__act_h
                                          [1U][3U] * (IData)(vlSelf->__PVT__weight))));
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__1__KET____DOT__g_col__BRA__3__KET____DOT__pe_inst__weight_load) {
-            vlSelf->__PVT__weight = (vlSymsp->TOP.__Vcellinp__systolic_array__weight_data 
+            vlSelf->__PVT__weight = (vlSymsp->TOP.weight_data 
                                      >> 0x18U);
         }
     }
-    if ((1U & (~ (IData)(vlSymsp->TOP.__Vcellinp__systolic_array__reset)))) {
+    if ((1U & (~ (IData)(vlSymsp->TOP.reset)))) {
         ++(vlSymsp->__Vcoverage[395]);
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__1__KET____DOT__g_col__BRA__3__KET____DOT__pe_inst__weight_load) {
             ++(vlSymsp->__Vcoverage[392]);
@@ -3539,7 +3539,7 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
     VL_DEBUG_IF(VL_DBG_MSGF("+        Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__g_row__BRA__2__KET____DOT__g_col__BRA__0__KET____DOT__pe_inst__0\n"); );
     // Body
     ++(vlSymsp->__Vcoverage[396]);
-    if (vlSymsp->TOP.__Vcellinp__systolic_array__reset) {
+    if (vlSymsp->TOP.reset) {
         ++(vlSymsp->__Vcoverage[394]);
         vlSelf->act_out = 0U;
         vlSelf->psum_out = 0U;
@@ -3552,10 +3552,10 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
                                         (vlSymsp->TOP.systolic_array__DOT__act_h
                                          [2U][0U] * (IData)(vlSelf->__PVT__weight))));
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__2__KET____DOT__g_col__BRA__0__KET____DOT__pe_inst__weight_load) {
-            vlSelf->__PVT__weight = (0xffU & vlSymsp->TOP.__Vcellinp__systolic_array__weight_data);
+            vlSelf->__PVT__weight = (0xffU & vlSymsp->TOP.weight_data);
         }
     }
-    if ((1U & (~ (IData)(vlSymsp->TOP.__Vcellinp__systolic_array__reset)))) {
+    if ((1U & (~ (IData)(vlSymsp->TOP.reset)))) {
         ++(vlSymsp->__Vcoverage[395]);
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__2__KET____DOT__g_col__BRA__0__KET____DOT__pe_inst__weight_load) {
             ++(vlSymsp->__Vcoverage[392]);
@@ -3979,7 +3979,7 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
     VL_DEBUG_IF(VL_DBG_MSGF("+        Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__g_row__BRA__2__KET____DOT__g_col__BRA__1__KET____DOT__pe_inst__0\n"); );
     // Body
     ++(vlSymsp->__Vcoverage[396]);
-    if (vlSymsp->TOP.__Vcellinp__systolic_array__reset) {
+    if (vlSymsp->TOP.reset) {
         ++(vlSymsp->__Vcoverage[394]);
         vlSelf->act_out = 0U;
         vlSelf->psum_out = 0U;
@@ -3992,11 +3992,11 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
                                         (vlSymsp->TOP.systolic_array__DOT__act_h
                                          [2U][1U] * (IData)(vlSelf->__PVT__weight))));
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__2__KET____DOT__g_col__BRA__1__KET____DOT__pe_inst__weight_load) {
-            vlSelf->__PVT__weight = (0xffU & (vlSymsp->TOP.__Vcellinp__systolic_array__weight_data 
+            vlSelf->__PVT__weight = (0xffU & (vlSymsp->TOP.weight_data 
                                               >> 8U));
         }
     }
-    if ((1U & (~ (IData)(vlSymsp->TOP.__Vcellinp__systolic_array__reset)))) {
+    if ((1U & (~ (IData)(vlSymsp->TOP.reset)))) {
         ++(vlSymsp->__Vcoverage[395]);
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__2__KET____DOT__g_col__BRA__1__KET____DOT__pe_inst__weight_load) {
             ++(vlSymsp->__Vcoverage[392]);
@@ -4420,7 +4420,7 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
     VL_DEBUG_IF(VL_DBG_MSGF("+        Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__g_row__BRA__2__KET____DOT__g_col__BRA__2__KET____DOT__pe_inst__0\n"); );
     // Body
     ++(vlSymsp->__Vcoverage[396]);
-    if (vlSymsp->TOP.__Vcellinp__systolic_array__reset) {
+    if (vlSymsp->TOP.reset) {
         ++(vlSymsp->__Vcoverage[394]);
         vlSelf->act_out = 0U;
         vlSelf->psum_out = 0U;
@@ -4433,11 +4433,11 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
                                         (vlSymsp->TOP.systolic_array__DOT__act_h
                                          [2U][2U] * (IData)(vlSelf->__PVT__weight))));
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__2__KET____DOT__g_col__BRA__2__KET____DOT__pe_inst__weight_load) {
-            vlSelf->__PVT__weight = (0xffU & (vlSymsp->TOP.__Vcellinp__systolic_array__weight_data 
+            vlSelf->__PVT__weight = (0xffU & (vlSymsp->TOP.weight_data 
                                               >> 0x10U));
         }
     }
-    if ((1U & (~ (IData)(vlSymsp->TOP.__Vcellinp__systolic_array__reset)))) {
+    if ((1U & (~ (IData)(vlSymsp->TOP.reset)))) {
         ++(vlSymsp->__Vcoverage[395]);
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__2__KET____DOT__g_col__BRA__2__KET____DOT__pe_inst__weight_load) {
             ++(vlSymsp->__Vcoverage[392]);
@@ -4861,7 +4861,7 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
     VL_DEBUG_IF(VL_DBG_MSGF("+        Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__g_row__BRA__2__KET____DOT__g_col__BRA__3__KET____DOT__pe_inst__0\n"); );
     // Body
     ++(vlSymsp->__Vcoverage[396]);
-    if (vlSymsp->TOP.__Vcellinp__systolic_array__reset) {
+    if (vlSymsp->TOP.reset) {
         ++(vlSymsp->__Vcoverage[394]);
         vlSelf->act_out = 0U;
         vlSelf->psum_out = 0U;
@@ -4874,11 +4874,11 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
                                         (vlSymsp->TOP.systolic_array__DOT__act_h
                                          [2U][3U] * (IData)(vlSelf->__PVT__weight))));
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__2__KET____DOT__g_col__BRA__3__KET____DOT__pe_inst__weight_load) {
-            vlSelf->__PVT__weight = (vlSymsp->TOP.__Vcellinp__systolic_array__weight_data 
+            vlSelf->__PVT__weight = (vlSymsp->TOP.weight_data 
                                      >> 0x18U);
         }
     }
-    if ((1U & (~ (IData)(vlSymsp->TOP.__Vcellinp__systolic_array__reset)))) {
+    if ((1U & (~ (IData)(vlSymsp->TOP.reset)))) {
         ++(vlSymsp->__Vcoverage[395]);
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__2__KET____DOT__g_col__BRA__3__KET____DOT__pe_inst__weight_load) {
             ++(vlSymsp->__Vcoverage[392]);
@@ -5302,7 +5302,7 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
     VL_DEBUG_IF(VL_DBG_MSGF("+        Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__g_row__BRA__3__KET____DOT__g_col__BRA__0__KET____DOT__pe_inst__0\n"); );
     // Body
     ++(vlSymsp->__Vcoverage[396]);
-    if (vlSymsp->TOP.__Vcellinp__systolic_array__reset) {
+    if (vlSymsp->TOP.reset) {
         ++(vlSymsp->__Vcoverage[394]);
         vlSelf->act_out = 0U;
         vlSelf->psum_out = 0U;
@@ -5315,10 +5315,10 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
                                         (vlSymsp->TOP.systolic_array__DOT__act_h
                                          [3U][0U] * (IData)(vlSelf->__PVT__weight))));
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__3__KET____DOT__g_col__BRA__0__KET____DOT__pe_inst__weight_load) {
-            vlSelf->__PVT__weight = (0xffU & vlSymsp->TOP.__Vcellinp__systolic_array__weight_data);
+            vlSelf->__PVT__weight = (0xffU & vlSymsp->TOP.weight_data);
         }
     }
-    if ((1U & (~ (IData)(vlSymsp->TOP.__Vcellinp__systolic_array__reset)))) {
+    if ((1U & (~ (IData)(vlSymsp->TOP.reset)))) {
         ++(vlSymsp->__Vcoverage[395]);
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__3__KET____DOT__g_col__BRA__0__KET____DOT__pe_inst__weight_load) {
             ++(vlSymsp->__Vcoverage[392]);
@@ -5742,7 +5742,7 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
     VL_DEBUG_IF(VL_DBG_MSGF("+        Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__g_row__BRA__3__KET____DOT__g_col__BRA__1__KET____DOT__pe_inst__0\n"); );
     // Body
     ++(vlSymsp->__Vcoverage[396]);
-    if (vlSymsp->TOP.__Vcellinp__systolic_array__reset) {
+    if (vlSymsp->TOP.reset) {
         ++(vlSymsp->__Vcoverage[394]);
         vlSelf->act_out = 0U;
         vlSelf->psum_out = 0U;
@@ -5755,11 +5755,11 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
                                         (vlSymsp->TOP.systolic_array__DOT__act_h
                                          [3U][1U] * (IData)(vlSelf->__PVT__weight))));
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__3__KET____DOT__g_col__BRA__1__KET____DOT__pe_inst__weight_load) {
-            vlSelf->__PVT__weight = (0xffU & (vlSymsp->TOP.__Vcellinp__systolic_array__weight_data 
+            vlSelf->__PVT__weight = (0xffU & (vlSymsp->TOP.weight_data 
                                               >> 8U));
         }
     }
-    if ((1U & (~ (IData)(vlSymsp->TOP.__Vcellinp__systolic_array__reset)))) {
+    if ((1U & (~ (IData)(vlSymsp->TOP.reset)))) {
         ++(vlSymsp->__Vcoverage[395]);
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__3__KET____DOT__g_col__BRA__1__KET____DOT__pe_inst__weight_load) {
             ++(vlSymsp->__Vcoverage[392]);
@@ -6183,7 +6183,7 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
     VL_DEBUG_IF(VL_DBG_MSGF("+        Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__g_row__BRA__3__KET____DOT__g_col__BRA__2__KET____DOT__pe_inst__0\n"); );
     // Body
     ++(vlSymsp->__Vcoverage[396]);
-    if (vlSymsp->TOP.__Vcellinp__systolic_array__reset) {
+    if (vlSymsp->TOP.reset) {
         ++(vlSymsp->__Vcoverage[394]);
         vlSelf->act_out = 0U;
         vlSelf->psum_out = 0U;
@@ -6196,11 +6196,11 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
                                         (vlSymsp->TOP.systolic_array__DOT__act_h
                                          [3U][2U] * (IData)(vlSelf->__PVT__weight))));
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__3__KET____DOT__g_col__BRA__2__KET____DOT__pe_inst__weight_load) {
-            vlSelf->__PVT__weight = (0xffU & (vlSymsp->TOP.__Vcellinp__systolic_array__weight_data 
+            vlSelf->__PVT__weight = (0xffU & (vlSymsp->TOP.weight_data 
                                               >> 0x10U));
         }
     }
-    if ((1U & (~ (IData)(vlSymsp->TOP.__Vcellinp__systolic_array__reset)))) {
+    if ((1U & (~ (IData)(vlSymsp->TOP.reset)))) {
         ++(vlSymsp->__Vcoverage[395]);
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__3__KET____DOT__g_col__BRA__2__KET____DOT__pe_inst__weight_load) {
             ++(vlSymsp->__Vcoverage[392]);

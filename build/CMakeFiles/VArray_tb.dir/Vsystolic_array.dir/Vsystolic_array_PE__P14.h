@@ -1,12 +1,10 @@
-// Verilated -*- SystemC -*-
+// Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Design internal header
 // See Vsystolic_array.h for the primary calling header
 
 #ifndef VERILATED_VSYSTOLIC_ARRAY_PE__P14_H_
 #define VERILATED_VSYSTOLIC_ARRAY_PE__P14_H_  // guard
 
-#include "systemc.h"
-#include "verilated_sc.h"
 #include "verilated.h"
 #include "verilated_cov.h"
 

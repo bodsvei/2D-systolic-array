@@ -1,15 +1,15 @@
-// Verilated -*- SystemC -*-
+// Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Model implementation (design independent parts)
 
 #include "Vsystolic_array.h"
 #include "Vsystolic_array__Syms.h"
-#include "verilated_vcd_sc.h"
+#include "verilated_vcd_c.h"
 
 //============================================================
 // Constructors
 
-Vsystolic_array::Vsystolic_array(sc_module_name /* unused */)
-    : vlSymsp{new Vsystolic_array__Syms(nullptr, name(), this)}
+Vsystolic_array::Vsystolic_array(VerilatedContext* _vcontextp__, const char* _vcname__)
+    : vlSymsp{new Vsystolic_array__Syms(_vcontextp__, _vcname__, this)}
     , clk{vlSymsp->TOP.clk}
     , reset{vlSymsp->TOP.reset}
     , weight_load{vlSymsp->TOP.weight_load}
@@ -36,15 +36,11 @@ Vsystolic_array::Vsystolic_array(sc_module_name /* unused */)
     , __PVT__systolic_array__DOT__g_row__BRA__3__KET____DOT__g_col__BRA__3__KET____DOT__pe_inst{vlSymsp->TOP.__PVT__systolic_array__DOT__g_row__BRA__3__KET____DOT__g_col__BRA__3__KET____DOT__pe_inst}
     , rootp{&(vlSymsp->TOP)}
 {
-    // Sensitivities on all clocks and combinational inputs
-    SC_METHOD(eval);
-    sensitive << clk;
-    sensitive << reset;
-    sensitive << weight_load;
-    sensitive << weight_row_sel;
-    sensitive << weight_data;
-    sensitive << act_col_in;
+}
 
+Vsystolic_array::Vsystolic_array(const char* _vcname__)
+    : Vsystolic_array(nullptr, _vcname__)
+{
 }
 
 //============================================================
@@ -101,6 +97,10 @@ VerilatedContext* Vsystolic_array::contextp() const {
     return vlSymsp->_vm_contextp__;
 }
 
+const char* Vsystolic_array::name() const {
+    return vlSymsp->name();
+}
+
 //============================================================
 // Invoke final blocks
 
@@ -132,9 +132,7 @@ VL_ATTR_COLD static void trace_init(void* voidSelf, VerilatedVcd* tracep, uint32
 VL_ATTR_COLD void Vsystolic_array___024root__trace_register(Vsystolic_array___024root* vlSelf, VerilatedVcd* tracep);
 
 VL_ATTR_COLD void Vsystolic_array::trace(VerilatedVcdC* tfp, int levels, int options) {
-    if (!sc_core::sc_get_curr_simcontext()->elaboration_done()) {
-        vl_fatal(__FILE__, __LINE__, name(), "Vsystolic_array::trace() is called before sc_core::sc_start(). Run sc_core::sc_start(sc_core::SC_ZERO_TIME) before trace() to complete elaboration.");
-    }if (false && levels && options) {}  // Prevent unused
+    if (false && levels && options) {}  // Prevent unused
     tfp->spTrace()->addInitCb(&trace_init, &(vlSymsp->TOP));
     Vsystolic_array___024root__trace_register(&(vlSymsp->TOP), tfp->spTrace());
 }

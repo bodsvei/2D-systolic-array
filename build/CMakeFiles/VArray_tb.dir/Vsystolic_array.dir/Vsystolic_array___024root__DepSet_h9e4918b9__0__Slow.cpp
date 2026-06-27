@@ -1,4 +1,4 @@
-// Verilated -*- SystemC -*-
+// Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Design implementation internals
 // See Vsystolic_array.h for the primary calling header
 
@@ -11,8 +11,7 @@ VL_ATTR_COLD void Vsystolic_array___024root___eval_initial(Vsystolic_array___024
     Vsystolic_array__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vsystolic_array___024root___eval_initial\n"); );
     // Body
-    vlSelf->__Vclklast__TOP____Vcellinp__systolic_array__clk 
-        = vlSelf->__Vcellinp__systolic_array__clk;
+    vlSelf->__Vclklast__TOP__clk = vlSelf->clk;
 }
 
 VL_ATTR_COLD void Vsystolic_array___024root___final(Vsystolic_array___024root* vlSelf) {
@@ -26,14 +25,14 @@ VL_ATTR_COLD void Vsystolic_array___024root___ctor_var_reset(Vsystolic_array___0
     Vsystolic_array__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vsystolic_array___024root___ctor_var_reset\n"); );
     // Body
-    VL_RAND_RESET_W(320, vlSelf->__Vcellout__systolic_array__psum_array_out);
-    VL_RAND_RESET_W(80, vlSelf->__Vcellout__systolic_array__psum_bottom_out);
-    vlSelf->__Vcellinp__systolic_array__act_col_in = VL_RAND_RESET_I(32);
-    vlSelf->__Vcellinp__systolic_array__weight_data = VL_RAND_RESET_I(32);
-    vlSelf->__Vcellinp__systolic_array__weight_row_sel = VL_RAND_RESET_I(2);
-    vlSelf->__Vcellinp__systolic_array__weight_load = VL_RAND_RESET_I(1);
-    vlSelf->__Vcellinp__systolic_array__reset = VL_RAND_RESET_I(1);
-    vlSelf->__Vcellinp__systolic_array__clk = VL_RAND_RESET_I(1);
+    vlSelf->clk = VL_RAND_RESET_I(1);
+    vlSelf->reset = VL_RAND_RESET_I(1);
+    vlSelf->weight_load = VL_RAND_RESET_I(1);
+    vlSelf->weight_row_sel = VL_RAND_RESET_I(2);
+    vlSelf->weight_data = VL_RAND_RESET_I(32);
+    vlSelf->act_col_in = VL_RAND_RESET_I(32);
+    VL_RAND_RESET_W(80, vlSelf->psum_bottom_out);
+    VL_RAND_RESET_W(320, vlSelf->psum_array_out);
     for (int __Vi0=0; __Vi0<4; ++__Vi0) {
         for (int __Vi1=0; __Vi1<5; ++__Vi1) {
             vlSelf->systolic_array__DOT__act_h[__Vi0][__Vi1] = VL_RAND_RESET_I(8);

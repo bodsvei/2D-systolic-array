@@ -1,4 +1,4 @@
-// Verilated -*- SystemC -*-
+// Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Primary model header
 //
 // This header should be included by all source files instantiating the design.
@@ -8,19 +8,17 @@
 #ifndef VERILATED_VSYSTOLIC_ARRAY_H_
 #define VERILATED_VSYSTOLIC_ARRAY_H_  // guard
 
-#include "systemc.h"
-#include "verilated_sc.h"
 #include "verilated.h"
 #include "verilated_cov.h"
 
 class Vsystolic_array__Syms;
 class Vsystolic_array___024root;
-class VerilatedVcdSc;
+class VerilatedVcdC;
 class Vsystolic_array_PE__P14;
 
 
 // This class is the main interface to the Verilated model
-SC_MODULE(Vsystolic_array) {
+class Vsystolic_array VL_NOT_FINAL {
   private:
     // Symbol table holding complete model state (owned by this class)
     Vsystolic_array__Syms* const vlSymsp;
@@ -30,14 +28,14 @@ SC_MODULE(Vsystolic_array) {
     // PORTS
     // The application code writes and reads these signals to
     // propagate new values into/out from the Verilated model.
-    sc_in<bool> &clk;
-    sc_in<bool> &reset;
-    sc_in<bool> &weight_load;
-    sc_in<uint32_t> &weight_row_sel;
-    sc_in<uint32_t> &weight_data;
-    sc_in<uint32_t> &act_col_in;
-    sc_out<sc_bv<80> > &psum_bottom_out;
-    sc_out<sc_bv<320> > &psum_array_out;
+    VL_IN8(&clk,0,0);
+    VL_IN8(&reset,0,0);
+    VL_IN8(&weight_load,0,0);
+    VL_IN8(&weight_row_sel,1,0);
+    VL_IN(&weight_data,31,0);
+    VL_IN(&act_col_in,31,0);
+    VL_OUTW(&psum_bottom_out,79,0,3);
+    VL_OUTW(&psum_array_out,319,0,10);
 
     // CELLS
     // Public to allow access to /* verilator public */ items.
@@ -64,25 +62,35 @@ SC_MODULE(Vsystolic_array) {
     Vsystolic_array___024root* const rootp;
 
     // CONSTRUCTORS
-    SC_CTOR(Vsystolic_array);
+    /// Construct the model; called by application code
+    /// If contextp is null, then the model will use the default global context
+    /// If name is "", then makes a wrapper with a
+    /// single model invisible with respect to DPI scope names.
+    explicit Vsystolic_array(VerilatedContext* contextp, const char* name = "TOP");
+    explicit Vsystolic_array(const char* name = "TOP");
+    /// Destroy the model; called (often implicitly) by application code
     virtual ~Vsystolic_array();
   private:
     VL_UNCOPYABLE(Vsystolic_array);  ///< Copying not allowed
 
   public:
     // API METHODS
-  private:
+    /// Evaluate the model.  Application must call when inputs change.
     void eval() { eval_step(); }
+    /// Evaluate when calling multiple units/models per time step.
     void eval_step();
-  public:
+    /// Evaluate at end of a timestep for tracing, when using eval_step().
+    /// Application must call after all eval() and before time changes.
+    void eval_end_step() {}
+    /// Simulation complete, run final blocks.  Application must call on completion.
     void final();
     /// Trace signals in the model; called by application code
     void trace(VerilatedVcdC* tfp, int levels, int options = 0);
-    /// SC tracing; avoid overloaded virtual function lint warning
-    virtual void trace(sc_trace_file* tfp) const override { ::sc_core::sc_module::trace(tfp); }
     /// Return current simulation context for this model.
     /// Used to get to e.g. simulation time via contextp()->time()
     VerilatedContext* contextp() const;
+    /// Retrieve name of this model instance (as passed to constructor).
+    const char* name() const;
 } VL_ATTR_ALIGNED(VL_CACHE_LINE_BYTES);
 
 #endif  // guard

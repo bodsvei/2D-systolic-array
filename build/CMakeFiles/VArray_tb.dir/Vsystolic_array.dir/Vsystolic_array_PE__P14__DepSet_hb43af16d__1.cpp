@@ -1,4 +1,4 @@
-// Verilated -*- SystemC -*-
+// Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Design implementation internals
 // See Vsystolic_array.h for the primary calling header
 
@@ -236,7 +236,7 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
     VL_DEBUG_IF(VL_DBG_MSGF("+        Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__g_row__BRA__3__KET____DOT__g_col__BRA__3__KET____DOT__pe_inst__0\n"); );
     // Body
     ++(vlSymsp->__Vcoverage[396]);
-    if (vlSymsp->TOP.__Vcellinp__systolic_array__reset) {
+    if (vlSymsp->TOP.reset) {
         ++(vlSymsp->__Vcoverage[394]);
         vlSelf->act_out = 0U;
         vlSelf->psum_out = 0U;
@@ -249,11 +249,11 @@ VL_INLINE_OPT void Vsystolic_array_PE__P14___sequent__TOP__systolic_array__DOT__
                                         (vlSymsp->TOP.systolic_array__DOT__act_h
                                          [3U][3U] * (IData)(vlSelf->__PVT__weight))));
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__3__KET____DOT__g_col__BRA__3__KET____DOT__pe_inst__weight_load) {
-            vlSelf->__PVT__weight = (vlSymsp->TOP.__Vcellinp__systolic_array__weight_data 
+            vlSelf->__PVT__weight = (vlSymsp->TOP.weight_data 
                                      >> 0x18U);
         }
     }
-    if ((1U & (~ (IData)(vlSymsp->TOP.__Vcellinp__systolic_array__reset)))) {
+    if ((1U & (~ (IData)(vlSymsp->TOP.reset)))) {
         ++(vlSymsp->__Vcoverage[395]);
         if (vlSymsp->TOP.systolic_array__DOT____Vcellinp__g_row__BRA__3__KET____DOT__g_col__BRA__3__KET____DOT__pe_inst__weight_load) {
             ++(vlSymsp->__Vcoverage[392]);

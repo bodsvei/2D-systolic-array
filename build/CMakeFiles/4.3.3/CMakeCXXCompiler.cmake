@@ -98,5 +98,5 @@ set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "/Library/Developer/CommandLin
 set(CMAKE_CXX_COMPILER_CLANG_RESOURCE_DIR "")
 
 set(CMAKE_CXX_COMPILER_IMPORT_STD "")
-set(CMAKE_CXX_COMPILER_IMPORT_STD_ERROR_MESSAGE  "Toolchain does not support discovering module metadata")
+set(CMAKE_CXX_COMPILER_IMPORT_STD_ERROR_MESSAGE  "Unsupported generator: Unix Makefiles")
 set(CMAKE_CXX_STDLIB_MODULES_JSON "")

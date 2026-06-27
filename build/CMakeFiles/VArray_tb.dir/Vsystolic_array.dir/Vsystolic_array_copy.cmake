@@ -17,7 +17,7 @@ set(Vsystolic_array_USER_LDLIBS )
 
 ### Switches...
 # SystemC output mode?  0/1 (from --sc)
-set(Vsystolic_array_SC 1)
+set(Vsystolic_array_SC 0)
 # Coverage output mode?  0/1 (from --coverage)
 set(Vsystolic_array_COVERAGE 1)
 # Threaded output mode?  0/1/N threads (from --threads)
@@ -34,7 +34,7 @@ set(Vsystolic_array_TRACE_FST 0)
 
 ### Sources...
 # Global classes, need linked once per executable
-set(Vsystolic_array_GLOBAL "${VERILATOR_ROOT}/include/verilated.cpp" "${VERILATOR_ROOT}/include/verilated_cov.cpp" "${VERILATOR_ROOT}/include/verilated_vcd_c.cpp" "${VERILATOR_ROOT}/include/verilated_vcd_sc.cpp")
+set(Vsystolic_array_GLOBAL "${VERILATOR_ROOT}/include/verilated.cpp" "${VERILATOR_ROOT}/include/verilated_cov.cpp" "${VERILATOR_ROOT}/include/verilated_vcd_c.cpp")
 # Generated module classes, non-fast-path, compile with low/medium optimization
 set(Vsystolic_array_CLASSES_SLOW "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/VArray_tb.dir/Vsystolic_array.dir/Vsystolic_array___024root__Slow.cpp" "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/VArray_tb.dir/Vsystolic_array.dir/Vsystolic_array___024root__DepSet_hf9a61689__0__Slow.cpp" "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/VArray_tb.dir/Vsystolic_array.dir/Vsystolic_array___024root__DepSet_h9e4918b9__0__Slow.cpp" "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/VArray_tb.dir/Vsystolic_array.dir/Vsystolic_array_PE__P14__Slow.cpp" "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/VArray_tb.dir/Vsystolic_array.dir/Vsystolic_array_PE__P14__DepSet_ha6c3c7f8__0__Slow.cpp" "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/VArray_tb.dir/Vsystolic_array.dir/Vsystolic_array_PE__P14__DepSet_hb43af16d__0__Slow.cpp")
 # Generated module classes, fast-path, compile with highest optimization

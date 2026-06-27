@@ -20,7 +20,8 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/Users/anirudhsinghair/miniconda3/bin/"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/"
+      - "/Users/anirudhsinghair/.local/bin/"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
@@ -42,7 +43,8 @@ events:
       - "/opt/homebrew/bin/"
       - "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
-      - "/Users/anirudhsinghair/miniconda3/bin/uname"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/uname"
+      - "/Users/anirudhsinghair/.local/bin/uname"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/uname"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/uname"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/uname"
@@ -56,7 +58,8 @@ events:
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
+        - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -79,6 +82,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -96,11 +100,11 @@ events:
   -
     kind: "find-v1"
     backtrace:
-      - "/opt/homebrew/share/cmake/Modules/CMakeNinjaFindMake.cmake:5 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_MAKE_PROGRAM"
-    description: "Program used to build from build.ninja files."
+    description: "Path to a program."
     settings:
       SearchFramework: "FIRST"
       SearchAppBundle: "FIRST"
@@ -110,11 +114,12 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "ninja-build"
-      - "ninja"
-      - "samu"
+      - "gmake"
+      - "make"
+      - "smake"
     candidate_directories:
-      - "/Users/anirudhsinghair/miniconda3/bin/"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/"
+      - "/Users/anirudhsinghair/.local/bin/"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
@@ -136,68 +141,45 @@ events:
       - "/opt/homebrew/bin/"
       - "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
-      - "/Users/anirudhsinghair/miniconda3/bin/ninja-build"
-      - "/Users/anirudhsinghair/miniconda3/bin/ninja"
-      - "/Users/anirudhsinghair/miniconda3/bin/samu"
-      - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/ninja-build"
-      - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/ninja"
-      - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/samu"
-      - "/Users/anirudhsinghair/.antigravity/antigravity/bin/ninja-build"
-      - "/Users/anirudhsinghair/.antigravity/antigravity/bin/ninja"
-      - "/Users/anirudhsinghair/.antigravity/antigravity/bin/samu"
-      - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/ninja-build"
-      - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/ninja"
-      - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/samu"
-      - "/opt/flex/flex-2.6.4/bin/ninja-build"
-      - "/opt/flex/flex-2.6.4/bin/ninja"
-      - "/opt/flex/flex-2.6.4/bin/samu"
-      - "/opt/bison/bison-3.7.91/bin/ninja-build"
-      - "/opt/bison/bison-3.7.91/bin/ninja"
-      - "/opt/bison/bison-3.7.91/bin/samu"
-      - "/Users/anirudhsinghair/Library/Python/3.9/bin/ninja-build"
-      - "/Users/anirudhsinghair/Library/Python/3.9/bin/ninja"
-      - "/Users/anirudhsinghair/Library/Python/3.9/bin/samu"
-      - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/ninja-build"
-      - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/ninja"
-      - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/samu"
-      - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/ninja-build"
-      - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/ninja"
-      - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/samu"
-      - "/usr/local/bin/ninja-build"
-      - "/usr/local/bin/ninja"
-      - "/usr/local/bin/samu"
-      - "/System/Cryptexes/App/usr/bin/ninja-build"
-      - "/System/Cryptexes/App/usr/bin/ninja"
-      - "/System/Cryptexes/App/usr/bin/samu"
-      - "/usr/bin/ninja-build"
-      - "/usr/bin/ninja"
-      - "/usr/bin/samu"
-      - "/bin/ninja-build"
-      - "/bin/ninja"
-      - "/bin/samu"
-      - "/usr/sbin/ninja-build"
-      - "/usr/sbin/ninja"
-      - "/usr/sbin/samu"
-      - "/sbin/ninja-build"
-      - "/sbin/ninja"
-      - "/sbin/samu"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/ninja-build"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/ninja"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/samu"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/ninja-build"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/ninja"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/samu"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/ninja-build"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/ninja"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/samu"
-      - "/opt/X11/bin/ninja-build"
-      - "/opt/X11/bin/ninja"
-      - "/opt/X11/bin/samu"
-      - "/opt/homebrew/bin/ninja-build"
-    found: "/opt/homebrew/bin/ninja"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/gmake"
+      - "/Users/anirudhsinghair/.local/bin/gmake"
+      - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/gmake"
+      - "/Users/anirudhsinghair/.antigravity/antigravity/bin/gmake"
+      - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/gmake"
+      - "/opt/flex/flex-2.6.4/bin/gmake"
+      - "/opt/bison/bison-3.7.91/bin/gmake"
+      - "/Users/anirudhsinghair/Library/Python/3.9/bin/gmake"
+      - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/gmake"
+      - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/gmake"
+      - "/usr/local/bin/gmake"
+      - "/System/Cryptexes/App/usr/bin/gmake"
+      - "/usr/bin/gmake"
+      - "/bin/gmake"
+      - "/usr/sbin/gmake"
+      - "/sbin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/gmake"
+      - "/opt/X11/bin/gmake"
+      - "/opt/homebrew/bin/gmake"
+      - "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/gmake"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/make"
+      - "/Users/anirudhsinghair/.local/bin/make"
+      - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/make"
+      - "/Users/anirudhsinghair/.antigravity/antigravity/bin/make"
+      - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/make"
+      - "/opt/flex/flex-2.6.4/bin/make"
+      - "/opt/bison/bison-3.7.91/bin/make"
+      - "/Users/anirudhsinghair/Library/Python/3.9/bin/make"
+      - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/make"
+      - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/make"
+      - "/usr/local/bin/make"
+      - "/System/Cryptexes/App/usr/bin/make"
+    found: "/usr/bin/make"
     search_context:
       ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
+        - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -220,6 +202,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -253,7 +236,8 @@ events:
       - "icx"
       - "clang++"
     candidate_directories:
-      - "/Users/anirudhsinghair/miniconda3/bin/"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/"
+      - "/Users/anirudhsinghair/.local/bin/"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
@@ -275,7 +259,8 @@ events:
       - "/opt/homebrew/bin/"
       - "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
-      - "/Users/anirudhsinghair/miniconda3/bin/c++"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/c++"
+      - "/Users/anirudhsinghair/.local/bin/c++"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/c++"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/c++"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/c++"
@@ -289,7 +274,8 @@ events:
     found: "/usr/bin/c++"
     search_context:
       ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
+        - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -312,6 +298,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -346,7 +333,8 @@ events:
     found: "/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
+        - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -369,6 +357,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -460,7 +449,8 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/anirudhsinghair/miniconda3/bin/"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/"
+      - "/Users/anirudhsinghair/.local/bin/"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
@@ -483,7 +473,8 @@ events:
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
+        - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -506,6 +497,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -534,7 +526,8 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/anirudhsinghair/miniconda3/bin/"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/"
+      - "/Users/anirudhsinghair/.local/bin/"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
@@ -557,7 +550,8 @@ events:
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
+        - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -580,6 +574,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -608,7 +603,8 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/anirudhsinghair/miniconda3/bin/"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/"
+      - "/Users/anirudhsinghair/.local/bin/"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
@@ -631,7 +627,8 @@ events:
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
+        - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -654,6 +651,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -682,7 +680,8 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/anirudhsinghair/miniconda3/bin/"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/"
+      - "/Users/anirudhsinghair/.local/bin/"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
@@ -705,7 +704,8 @@ events:
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
+        - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -728,6 +728,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -756,7 +757,8 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/anirudhsinghair/miniconda3/bin/"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/"
+      - "/Users/anirudhsinghair/.local/bin/"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
@@ -779,7 +781,8 @@ events:
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
+        - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -802,6 +805,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -830,7 +834,8 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/anirudhsinghair/miniconda3/bin/"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/"
+      - "/Users/anirudhsinghair/.local/bin/"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
@@ -853,7 +858,8 @@ events:
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
+        - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -876,6 +882,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -904,7 +911,8 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/anirudhsinghair/miniconda3/bin/"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/"
+      - "/Users/anirudhsinghair/.local/bin/"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
@@ -926,7 +934,8 @@ events:
       - "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/objcopy"
-      - "/Users/anirudhsinghair/miniconda3/bin/objcopy"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/objcopy"
+      - "/Users/anirudhsinghair/.local/bin/objcopy"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/objcopy"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/objcopy"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/objcopy"
@@ -949,7 +958,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
+        - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -972,6 +982,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -1000,7 +1011,8 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/anirudhsinghair/miniconda3/bin/"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/"
+      - "/Users/anirudhsinghair/.local/bin/"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
@@ -1022,7 +1034,8 @@ events:
       - "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/readelf"
-      - "/Users/anirudhsinghair/miniconda3/bin/readelf"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/readelf"
+      - "/Users/anirudhsinghair/.local/bin/readelf"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/readelf"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/readelf"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/readelf"
@@ -1045,7 +1058,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
+        - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -1068,6 +1082,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -1096,7 +1111,8 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/anirudhsinghair/miniconda3/bin/"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/"
+      - "/Users/anirudhsinghair/.local/bin/"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
@@ -1118,7 +1134,8 @@ events:
       - "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/dlltool"
-      - "/Users/anirudhsinghair/miniconda3/bin/dlltool"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/dlltool"
+      - "/Users/anirudhsinghair/.local/bin/dlltool"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/dlltool"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/dlltool"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/dlltool"
@@ -1141,7 +1158,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
+        - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -1164,6 +1182,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -1192,7 +1211,8 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/anirudhsinghair/miniconda3/bin/"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/"
+      - "/Users/anirudhsinghair/.local/bin/"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
@@ -1214,7 +1234,8 @@ events:
       - "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/addr2line"
-      - "/Users/anirudhsinghair/miniconda3/bin/addr2line"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/addr2line"
+      - "/Users/anirudhsinghair/.local/bin/addr2line"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/addr2line"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/addr2line"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/addr2line"
@@ -1237,7 +1258,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
+        - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -1260,6 +1282,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -1288,7 +1311,8 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
-      - "/Users/anirudhsinghair/miniconda3/bin/"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/"
+      - "/Users/anirudhsinghair/.local/bin/"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
@@ -1310,7 +1334,8 @@ events:
       - "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
       - "/usr/bin/tapi"
-      - "/Users/anirudhsinghair/miniconda3/bin/tapi"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/tapi"
+      - "/Users/anirudhsinghair/.local/bin/tapi"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/tapi"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/tapi"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/tapi"
@@ -1333,7 +1358,8 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
+        - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -1356,6 +1382,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -1383,7 +1410,8 @@ events:
     names:
       - "install_name_tool"
     candidate_directories:
-      - "/Users/anirudhsinghair/miniconda3/bin/"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/"
+      - "/Users/anirudhsinghair/.local/bin/"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
@@ -1405,7 +1433,8 @@ events:
       - "/opt/homebrew/bin/"
       - "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
     searched_directories:
-      - "/Users/anirudhsinghair/miniconda3/bin/install_name_tool"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/install_name_tool"
+      - "/Users/anirudhsinghair/.local/bin/install_name_tool"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/install_name_tool"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/install_name_tool"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/install_name_tool"
@@ -1419,7 +1448,8 @@ events:
     found: "/usr/bin/install_name_tool"
     search_context:
       ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
+        - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -1442,6 +1472,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -1459,8 +1490,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-UgKqdC"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-UgKqdC"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-PocTWY"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-PocTWY"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1474,17 +1505,19 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-UgKqdC'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-PocTWY'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_5181e
-        [1/2] /usr/bin/c++   -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_5181e.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_5181e.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_5181e.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_80977/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_80977.dir/build.make CMakeFiles/cmTC_80977.dir/build
+        Building CXX object CMakeFiles/cmTC_80977.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_80977.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_80977.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_80977.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Apple clang version 17.0.0 (clang-1700.0.13.5)
         Target: arm64-apple-darwin24.5.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
         clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
         ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"
-         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-UgKqdC -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-UgKqdC -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_5181e.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_5181e.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I /opt/flex/flex-2.6.4/include -I /opt/bison/bison-3.7.91/share/include -I /opt/flex/flex-2.6.4/include -I /opt/bison/bison-3.7.91/share/include -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5181e.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+         "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-PocTWY -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-PocTWY -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_80977.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_80977.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I /opt/flex/flex-2.6.4/include -I /opt/bison/bison-3.7.91/share/include -I /opt/flex/flex-2.6.4/include -I /opt/bison/bison-3.7.91/share/include -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_80977.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         clang -cc1 version 17.0.0 (clang-1700.0.13.5) default target arm64-apple-darwin24.5.0
         ignoring nonexistent directory "/opt/bison/bison-3.7.91/share/include"
         ignoring nonexistent directory "/opt/bison/bison-3.7.91/share/include"
@@ -1502,12 +1535,13 @@ events:
          /Library/Developer/CommandLineTools/usr/include
          /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
         End of search list.
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -v -Wl,-v CMakeFiles/cmTC_5181e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5181e   && :
+        Linking CXX executable cmTC_80977
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80977.dir/link.txt --verbose=1
         Apple clang version 17.0.0 (clang-1700.0.13.5)
         Target: arm64-apple-darwin24.5.0
         Thread model: posix
         InstalledDir: /Library/Developer/CommandLineTools/usr/bin
-         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_5181e -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/usr/local/lib -v CMakeFiles/cmTC_5181e.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
+         "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_80977 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/usr/local/lib -v CMakeFiles/cmTC_80977.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a
         @(#)PROGRAM:ld PROJECT:ld-1167.5
         BUILD 01:45:05 Apr 30 2025
         configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
@@ -1524,6 +1558,7 @@ events:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/swift
         Framework search paths:
         	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks
+        /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -v -Wl,-v CMakeFiles/cmTC_80977.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_80977
         
       exitCode: 0
   -
@@ -1571,17 +1606,19 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-UgKqdC']
+        ignore line: [Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-PocTWY']
         ignore line: []
-        ignore line: [Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_5181e]
-        ignore line: [[1/2] /usr/bin/c++   -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_5181e.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_5181e.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_5181e.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_80977/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_80977.dir/build.make CMakeFiles/cmTC_80977.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_80977.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_80977.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_80977.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_80977.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Apple clang version 17.0.0 (clang-1700.0.13.5)]
         ignore line: [Target: arm64-apple-darwin24.5.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
         ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
         ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"]
-        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-UgKqdC -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-UgKqdC -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_5181e.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_5181e.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I /opt/flex/flex-2.6.4/include -I /opt/bison/bison-3.7.91/share/include -I /opt/flex/flex-2.6.4/include -I /opt/bison/bison-3.7.91/share/include -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5181e.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [ "/Library/Developer/CommandLineTools/usr/bin/clang" -cc1 -triple arm64-apple-macosx15.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=15.5 -fvisibility-inlines-hidden-static-local-var -fdefine-target-os-macros -fno-assume-unique-vtables -fno-modulemap-allow-subdirectory-search -target-cpu apple-m1 -target-feature +zcm -target-feature +zcz -target-feature +v8.5a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-PocTWY -target-linker-version 1167.5 -v -fcoverage-compilation-dir=/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-PocTWY -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/17 -dependency-file CMakeFiles/cmTC_80977.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_80977.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I /opt/flex/flex-2.6.4/include -I /opt/bison/bison-3.7.91/share/include -I /opt/flex/flex-2.6.4/include -I /opt/bison/bison-3.7.91/share/include -I/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/17/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -clang-vendor-feature=+disableAtImportPrivateFrameworkInImplementationError -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_80977.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [clang -cc1 version 17.0.0 (clang-1700.0.13.5) default target arm64-apple-darwin24.5.0]
         ignore line: [ignoring nonexistent directory "/opt/bison/bison-3.7.91/share/include"]
         ignore line: [ignoring nonexistent directory "/opt/bison/bison-3.7.91/share/include"]
@@ -1599,12 +1636,13 @@ events:
         ignore line: [ /Library/Developer/CommandLineTools/usr/include]
         ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
         ignore line: [End of search list.]
-        ignore line: [[2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -v -Wl -v CMakeFiles/cmTC_5181e.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5181e   && :]
+        ignore line: [Linking CXX executable cmTC_80977]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80977.dir/link.txt --verbose=1]
         ignore line: [Apple clang version 17.0.0 (clang-1700.0.13.5)]
         ignore line: [Target: arm64-apple-darwin24.5.0]
         ignore line: [Thread model: posix]
         ignore line: [InstalledDir: /Library/Developer/CommandLineTools/usr/bin]
-        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_5181e -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/usr/local/lib -v CMakeFiles/cmTC_5181e.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
+        link line: [ "/Library/Developer/CommandLineTools/usr/bin/ld" -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 15.0.0 15.5 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_80977 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/usr/local/lib -v CMakeFiles/cmTC_80977.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
           arg [/Library/Developer/CommandLineTools/usr/bin/ld] ==> ignore
           arg [-demangle] ==> ignore
           arg [-lto_library] ==> ignore, skip following value
@@ -1621,14 +1659,14 @@ events:
           arg [-mllvm] ==> ignore
           arg [-enable-linkonceodr-outlining] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_5181e] ==> ignore
+          arg [cmTC_80977] ==> ignore
           arg [-L/opt/flex/flex-2.6.4/lib] ==> dir [/opt/flex/flex-2.6.4/lib]
           arg [-L/opt/bison/bison-3.7.91/lib] ==> dir [/opt/bison/bison-3.7.91/lib]
           arg [-L/opt/flex/flex-2.6.4/lib] ==> dir [/opt/flex/flex-2.6.4/lib]
           arg [-L/opt/bison/bison-3.7.91/lib] ==> dir [/opt/bison/bison-3.7.91/lib]
           arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_5181e.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_80977.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lc++] ==> lib [c++]
           arg [-lSystem] ==> lib [System]
           arg [/Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a] ==> lib [/Library/Developer/CommandLineTools/usr/lib/clang/17/lib/darwin/libclang_rt.osx.a]
@@ -1675,7 +1713,7 @@ events:
     kind: "find-v1"
     backtrace:
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:31 (find_program)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     mode: "program"
     variable: "VERILATOR_BIN"
     description: "Path to a program."
@@ -1693,7 +1731,8 @@ events:
     candidate_directories:
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/"
-      - "/Users/anirudhsinghair/miniconda3/bin/"
+      - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin/"
+      - "/Users/anirudhsinghair/.local/bin/"
       - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
       - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
       - "/opt/flex/flex-2.6.4/bin/"
@@ -1716,7 +1755,8 @@ events:
     found: "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/verilator_bin"
     search_context:
       ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
+        - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -1739,6 +1779,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -1770,12 +1811,12 @@ events:
       - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
       - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:65 (check_cxx_compiler_flag)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test _faligned_new"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-fQFLMd"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-fQFLMd"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-bzj4HQ"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-bzj4HQ"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1788,11 +1829,15 @@ events:
       variable: "_faligned_new"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-fQFLMd'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-bzj4HQ'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_9dd3e
-        [1/2] /usr/bin/c++ -D_faligned_new  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -faligned-new -MD -MT CMakeFiles/cmTC_9dd3e.dir/src.cxx.o -MF CMakeFiles/cmTC_9dd3e.dir/src.cxx.o.d -o CMakeFiles/cmTC_9dd3e.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-fQFLMd/src.cxx
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_9dd3e.dir/src.cxx.o -o cmTC_9dd3e   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_18ba1/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_18ba1.dir/build.make CMakeFiles/cmTC_18ba1.dir/build
+        Building CXX object CMakeFiles/cmTC_18ba1.dir/src.cxx.o
+        /usr/bin/c++ -D_faligned_new  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -faligned-new -MD -MT CMakeFiles/cmTC_18ba1.dir/src.cxx.o -MF CMakeFiles/cmTC_18ba1.dir/src.cxx.o.d -o CMakeFiles/cmTC_18ba1.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-bzj4HQ/src.cxx
+        Linking CXX executable cmTC_18ba1
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18ba1.dir/link.txt --verbose=1
+        /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib  CMakeFiles/cmTC_18ba1.dir/src.cxx.o -o cmTC_18ba1
         
       exitCode: 0
   -
@@ -1802,12 +1847,12 @@ events:
       - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
       - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:65 (check_cxx_compiler_flag)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test _fbracket_depth_4096"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-jb8vw9"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-jb8vw9"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-bKDt1k"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-bKDt1k"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1820,11 +1865,15 @@ events:
       variable: "_fbracket_depth_4096"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-jb8vw9'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-bKDt1k'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_a2484
-        [1/2] /usr/bin/c++ -D_fbracket_depth_4096  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -fbracket-depth=4096 -MD -MT CMakeFiles/cmTC_a2484.dir/src.cxx.o -MF CMakeFiles/cmTC_a2484.dir/src.cxx.o.d -o CMakeFiles/cmTC_a2484.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-jb8vw9/src.cxx
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_a2484.dir/src.cxx.o -o cmTC_a2484   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ad96a/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ad96a.dir/build.make CMakeFiles/cmTC_ad96a.dir/build
+        Building CXX object CMakeFiles/cmTC_ad96a.dir/src.cxx.o
+        /usr/bin/c++ -D_fbracket_depth_4096  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -fbracket-depth=4096 -MD -MT CMakeFiles/cmTC_ad96a.dir/src.cxx.o -MF CMakeFiles/cmTC_ad96a.dir/src.cxx.o.d -o CMakeFiles/cmTC_ad96a.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-bKDt1k/src.cxx
+        Linking CXX executable cmTC_ad96a
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ad96a.dir/link.txt --verbose=1
+        /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib  CMakeFiles/cmTC_ad96a.dir/src.cxx.o -o cmTC_ad96a
         
       exitCode: 0
   -
@@ -1834,12 +1883,12 @@ events:
       - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
       - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:65 (check_cxx_compiler_flag)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test _fcf_protection_none"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-K9xT82"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-K9xT82"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-5xnNZ5"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-5xnNZ5"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1852,11 +1901,15 @@ events:
       variable: "_fcf_protection_none"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-K9xT82'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-5xnNZ5'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_d264d
-        [1/2] /usr/bin/c++ -D_fcf_protection_none  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -fcf-protection=none -MD -MT CMakeFiles/cmTC_d264d.dir/src.cxx.o -MF CMakeFiles/cmTC_d264d.dir/src.cxx.o.d -o CMakeFiles/cmTC_d264d.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-K9xT82/src.cxx
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_d264d.dir/src.cxx.o -o cmTC_d264d   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_11b32/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_11b32.dir/build.make CMakeFiles/cmTC_11b32.dir/build
+        Building CXX object CMakeFiles/cmTC_11b32.dir/src.cxx.o
+        /usr/bin/c++ -D_fcf_protection_none  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -fcf-protection=none -MD -MT CMakeFiles/cmTC_11b32.dir/src.cxx.o -MF CMakeFiles/cmTC_11b32.dir/src.cxx.o.d -o CMakeFiles/cmTC_11b32.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-5xnNZ5/src.cxx
+        Linking CXX executable cmTC_11b32
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11b32.dir/link.txt --verbose=1
+        /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib  CMakeFiles/cmTC_11b32.dir/src.cxx.o -o cmTC_11b32
         
       exitCode: 0
   -
@@ -1866,12 +1919,12 @@ events:
       - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
       - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:65 (check_cxx_compiler_flag)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test _mno_cet"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-6UHxH5"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-6UHxH5"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-5fEgPN"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-5fEgPN"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1884,16 +1937,17 @@ events:
       variable: "_mno_cet"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-6UHxH5'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-5fEgPN'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_71611
-        [1/2] /usr/bin/c++ -D_mno_cet  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -mno-cet -MD -MT CMakeFiles/cmTC_71611.dir/src.cxx.o -MF CMakeFiles/cmTC_71611.dir/src.cxx.o.d -o CMakeFiles/cmTC_71611.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-6UHxH5/src.cxx
-        FAILED: [code=1] CMakeFiles/cmTC_71611.dir/src.cxx.o 
-        /usr/bin/c++ -D_mno_cet  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -mno-cet -MD -MT CMakeFiles/cmTC_71611.dir/src.cxx.o -MF CMakeFiles/cmTC_71611.dir/src.cxx.o.d -o CMakeFiles/cmTC_71611.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-6UHxH5/src.cxx
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c3642/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c3642.dir/build.make CMakeFiles/cmTC_c3642.dir/build
+        Building CXX object CMakeFiles/cmTC_c3642.dir/src.cxx.o
+        /usr/bin/c++ -D_mno_cet  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -mno-cet -MD -MT CMakeFiles/cmTC_c3642.dir/src.cxx.o -MF CMakeFiles/cmTC_c3642.dir/src.cxx.o.d -o CMakeFiles/cmTC_c3642.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-5fEgPN/src.cxx
         clang++: error: unknown argument: '-mno-cet'
-        ninja: build stopped: subcommand failed.
+        make[1]: *** [CMakeFiles/cmTC_c3642.dir/src.cxx.o] Error 1
+        make: *** [cmTC_c3642/fast] Error 2
         
-      exitCode: 1
+      exitCode: 2
   -
     kind: "try_compile-v1"
     backtrace:
@@ -1901,12 +1955,12 @@ events:
       - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
       - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:65 (check_cxx_compiler_flag)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test _Qunused_arguments"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-arMXKd"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-arMXKd"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-08joEL"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-08joEL"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1919,11 +1973,15 @@ events:
       variable: "_Qunused_arguments"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-arMXKd'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-08joEL'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_9fc94
-        [1/2] /usr/bin/c++ -D_Qunused_arguments  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Qunused-arguments -MD -MT CMakeFiles/cmTC_9fc94.dir/src.cxx.o -MF CMakeFiles/cmTC_9fc94.dir/src.cxx.o.d -o CMakeFiles/cmTC_9fc94.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-arMXKd/src.cxx
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_9fc94.dir/src.cxx.o -o cmTC_9fc94   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bac6c/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_bac6c.dir/build.make CMakeFiles/cmTC_bac6c.dir/build
+        Building CXX object CMakeFiles/cmTC_bac6c.dir/src.cxx.o
+        /usr/bin/c++ -D_Qunused_arguments  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Qunused-arguments -MD -MT CMakeFiles/cmTC_bac6c.dir/src.cxx.o -MF CMakeFiles/cmTC_bac6c.dir/src.cxx.o.d -o CMakeFiles/cmTC_bac6c.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-08joEL/src.cxx
+        Linking CXX executable cmTC_bac6c
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bac6c.dir/link.txt --verbose=1
+        /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib  CMakeFiles/cmTC_bac6c.dir/src.cxx.o -o cmTC_bac6c
         
       exitCode: 0
   -
@@ -1933,12 +1991,12 @@ events:
       - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
       - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:65 (check_cxx_compiler_flag)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test _Wno_bool_operation"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-xZWnkK"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-xZWnkK"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-BIAjm7"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-BIAjm7"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1951,11 +2009,15 @@ events:
       variable: "_Wno_bool_operation"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-xZWnkK'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-BIAjm7'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_607b5
-        [1/2] /usr/bin/c++ -D_Wno_bool_operation  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Wno-bool-operation -MD -MT CMakeFiles/cmTC_607b5.dir/src.cxx.o -MF CMakeFiles/cmTC_607b5.dir/src.cxx.o.d -o CMakeFiles/cmTC_607b5.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-xZWnkK/src.cxx
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_607b5.dir/src.cxx.o -o cmTC_607b5   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6b71d/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6b71d.dir/build.make CMakeFiles/cmTC_6b71d.dir/build
+        Building CXX object CMakeFiles/cmTC_6b71d.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_bool_operation  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Wno-bool-operation -MD -MT CMakeFiles/cmTC_6b71d.dir/src.cxx.o -MF CMakeFiles/cmTC_6b71d.dir/src.cxx.o.d -o CMakeFiles/cmTC_6b71d.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-BIAjm7/src.cxx
+        Linking CXX executable cmTC_6b71d
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6b71d.dir/link.txt --verbose=1
+        /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib  CMakeFiles/cmTC_6b71d.dir/src.cxx.o -o cmTC_6b71d
         
       exitCode: 0
   -
@@ -1965,12 +2027,12 @@ events:
       - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
       - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:65 (check_cxx_compiler_flag)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test _Wno_tautological_bitwise_compare"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-Ihmgbo"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-Ihmgbo"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-nb0VUb"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-nb0VUb"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1983,11 +2045,15 @@ events:
       variable: "_Wno_tautological_bitwise_compare"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-Ihmgbo'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-nb0VUb'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_89c1d
-        [1/2] /usr/bin/c++ -D_Wno_tautological_bitwise_compare  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Wno-tautological-bitwise-compare -MD -MT CMakeFiles/cmTC_89c1d.dir/src.cxx.o -MF CMakeFiles/cmTC_89c1d.dir/src.cxx.o.d -o CMakeFiles/cmTC_89c1d.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-Ihmgbo/src.cxx
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_89c1d.dir/src.cxx.o -o cmTC_89c1d   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1f770/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_1f770.dir/build.make CMakeFiles/cmTC_1f770.dir/build
+        Building CXX object CMakeFiles/cmTC_1f770.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_tautological_bitwise_compare  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Wno-tautological-bitwise-compare -MD -MT CMakeFiles/cmTC_1f770.dir/src.cxx.o -MF CMakeFiles/cmTC_1f770.dir/src.cxx.o.d -o CMakeFiles/cmTC_1f770.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-nb0VUb/src.cxx
+        Linking CXX executable cmTC_1f770
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f770.dir/link.txt --verbose=1
+        /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib  CMakeFiles/cmTC_1f770.dir/src.cxx.o -o cmTC_1f770
         
       exitCode: 0
   -
@@ -1997,12 +2063,12 @@ events:
       - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
       - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:65 (check_cxx_compiler_flag)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test _Wno_parentheses_equality"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-Nm9Cl4"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-Nm9Cl4"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-2RY07x"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-2RY07x"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2015,11 +2081,15 @@ events:
       variable: "_Wno_parentheses_equality"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-Nm9Cl4'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-2RY07x'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_54001
-        [1/2] /usr/bin/c++ -D_Wno_parentheses_equality  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Wno-parentheses-equality -MD -MT CMakeFiles/cmTC_54001.dir/src.cxx.o -MF CMakeFiles/cmTC_54001.dir/src.cxx.o.d -o CMakeFiles/cmTC_54001.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-Nm9Cl4/src.cxx
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_54001.dir/src.cxx.o -o cmTC_54001   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c2b9b/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c2b9b.dir/build.make CMakeFiles/cmTC_c2b9b.dir/build
+        Building CXX object CMakeFiles/cmTC_c2b9b.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_parentheses_equality  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Wno-parentheses-equality -MD -MT CMakeFiles/cmTC_c2b9b.dir/src.cxx.o -MF CMakeFiles/cmTC_c2b9b.dir/src.cxx.o.d -o CMakeFiles/cmTC_c2b9b.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-2RY07x/src.cxx
+        Linking CXX executable cmTC_c2b9b
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2b9b.dir/link.txt --verbose=1
+        /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib  CMakeFiles/cmTC_c2b9b.dir/src.cxx.o -o cmTC_c2b9b
         
       exitCode: 0
   -
@@ -2029,12 +2099,12 @@ events:
       - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
       - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:65 (check_cxx_compiler_flag)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test _Wno_sign_compare"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-5lqMXt"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-5lqMXt"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-DELich"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-DELich"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2047,11 +2117,15 @@ events:
       variable: "_Wno_sign_compare"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-5lqMXt'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-DELich'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_e14b0
-        [1/2] /usr/bin/c++ -D_Wno_sign_compare  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Wno-sign-compare -MD -MT CMakeFiles/cmTC_e14b0.dir/src.cxx.o -MF CMakeFiles/cmTC_e14b0.dir/src.cxx.o.d -o CMakeFiles/cmTC_e14b0.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-5lqMXt/src.cxx
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_e14b0.dir/src.cxx.o -o cmTC_e14b0   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7f5a4/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7f5a4.dir/build.make CMakeFiles/cmTC_7f5a4.dir/build
+        Building CXX object CMakeFiles/cmTC_7f5a4.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_sign_compare  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Wno-sign-compare -MD -MT CMakeFiles/cmTC_7f5a4.dir/src.cxx.o -MF CMakeFiles/cmTC_7f5a4.dir/src.cxx.o.d -o CMakeFiles/cmTC_7f5a4.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-DELich/src.cxx
+        Linking CXX executable cmTC_7f5a4
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f5a4.dir/link.txt --verbose=1
+        /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib  CMakeFiles/cmTC_7f5a4.dir/src.cxx.o -o cmTC_7f5a4
         
       exitCode: 0
   -
@@ -2061,12 +2135,12 @@ events:
       - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
       - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:65 (check_cxx_compiler_flag)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test _Wno_uninitialized"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-NbvFuM"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-NbvFuM"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-0KDIJS"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-0KDIJS"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2079,11 +2153,15 @@ events:
       variable: "_Wno_uninitialized"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-NbvFuM'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-0KDIJS'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_86b25
-        [1/2] /usr/bin/c++ -D_Wno_uninitialized  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Wno-uninitialized -MD -MT CMakeFiles/cmTC_86b25.dir/src.cxx.o -MF CMakeFiles/cmTC_86b25.dir/src.cxx.o.d -o CMakeFiles/cmTC_86b25.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-NbvFuM/src.cxx
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_86b25.dir/src.cxx.o -o cmTC_86b25   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_2d447/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_2d447.dir/build.make CMakeFiles/cmTC_2d447.dir/build
+        Building CXX object CMakeFiles/cmTC_2d447.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_uninitialized  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Wno-uninitialized -MD -MT CMakeFiles/cmTC_2d447.dir/src.cxx.o -MF CMakeFiles/cmTC_2d447.dir/src.cxx.o.d -o CMakeFiles/cmTC_2d447.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-0KDIJS/src.cxx
+        Linking CXX executable cmTC_2d447
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d447.dir/link.txt --verbose=1
+        /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib  CMakeFiles/cmTC_2d447.dir/src.cxx.o -o cmTC_2d447
         
       exitCode: 0
   -
@@ -2093,12 +2171,12 @@ events:
       - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
       - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:65 (check_cxx_compiler_flag)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test _Wno_unused_but_set_variable"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-Ky1FF8"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-Ky1FF8"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-q0uKGi"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-q0uKGi"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2111,11 +2189,15 @@ events:
       variable: "_Wno_unused_but_set_variable"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-Ky1FF8'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-q0uKGi'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_8d44d
-        [1/2] /usr/bin/c++ -D_Wno_unused_but_set_variable  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Wno-unused-but-set-variable -MD -MT CMakeFiles/cmTC_8d44d.dir/src.cxx.o -MF CMakeFiles/cmTC_8d44d.dir/src.cxx.o.d -o CMakeFiles/cmTC_8d44d.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-Ky1FF8/src.cxx
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_8d44d.dir/src.cxx.o -o cmTC_8d44d   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_fb39c/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_fb39c.dir/build.make CMakeFiles/cmTC_fb39c.dir/build
+        Building CXX object CMakeFiles/cmTC_fb39c.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_unused_but_set_variable  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Wno-unused-but-set-variable -MD -MT CMakeFiles/cmTC_fb39c.dir/src.cxx.o -MF CMakeFiles/cmTC_fb39c.dir/src.cxx.o.d -o CMakeFiles/cmTC_fb39c.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-q0uKGi/src.cxx
+        Linking CXX executable cmTC_fb39c
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb39c.dir/link.txt --verbose=1
+        /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib  CMakeFiles/cmTC_fb39c.dir/src.cxx.o -o cmTC_fb39c
         
       exitCode: 0
   -
@@ -2125,12 +2207,12 @@ events:
       - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
       - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:65 (check_cxx_compiler_flag)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test _Wno_unused_parameter"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-2b2k9N"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-2b2k9N"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-OPgT7d"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-OPgT7d"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2143,11 +2225,15 @@ events:
       variable: "_Wno_unused_parameter"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-2b2k9N'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-OPgT7d'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_a9750
-        [1/2] /usr/bin/c++ -D_Wno_unused_parameter  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Wno-unused-parameter -MD -MT CMakeFiles/cmTC_a9750.dir/src.cxx.o -MF CMakeFiles/cmTC_a9750.dir/src.cxx.o.d -o CMakeFiles/cmTC_a9750.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-2b2k9N/src.cxx
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_a9750.dir/src.cxx.o -o cmTC_a9750   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1ed65/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_1ed65.dir/build.make CMakeFiles/cmTC_1ed65.dir/build
+        Building CXX object CMakeFiles/cmTC_1ed65.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_unused_parameter  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Wno-unused-parameter -MD -MT CMakeFiles/cmTC_1ed65.dir/src.cxx.o -MF CMakeFiles/cmTC_1ed65.dir/src.cxx.o.d -o CMakeFiles/cmTC_1ed65.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-OPgT7d/src.cxx
+        Linking CXX executable cmTC_1ed65
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ed65.dir/link.txt --verbose=1
+        /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib  CMakeFiles/cmTC_1ed65.dir/src.cxx.o -o cmTC_1ed65
         
       exitCode: 0
   -
@@ -2157,12 +2243,12 @@ events:
       - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
       - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:65 (check_cxx_compiler_flag)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test _Wno_unused_variable"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-icgzMZ"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-icgzMZ"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-hdVvbx"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-hdVvbx"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2175,11 +2261,15 @@ events:
       variable: "_Wno_unused_variable"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-icgzMZ'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-hdVvbx'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_26a37
-        [1/2] /usr/bin/c++ -D_Wno_unused_variable  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Wno-unused-variable -MD -MT CMakeFiles/cmTC_26a37.dir/src.cxx.o -MF CMakeFiles/cmTC_26a37.dir/src.cxx.o.d -o CMakeFiles/cmTC_26a37.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-icgzMZ/src.cxx
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_26a37.dir/src.cxx.o -o cmTC_26a37   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_72503/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_72503.dir/build.make CMakeFiles/cmTC_72503.dir/build
+        Building CXX object CMakeFiles/cmTC_72503.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_unused_variable  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Wno-unused-variable -MD -MT CMakeFiles/cmTC_72503.dir/src.cxx.o -MF CMakeFiles/cmTC_72503.dir/src.cxx.o.d -o CMakeFiles/cmTC_72503.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-hdVvbx/src.cxx
+        Linking CXX executable cmTC_72503
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72503.dir/link.txt --verbose=1
+        /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib  CMakeFiles/cmTC_72503.dir/src.cxx.o -o cmTC_72503
         
       exitCode: 0
   -
@@ -2189,12 +2279,12 @@ events:
       - "/opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
       - "/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:65 (check_cxx_compiler_flag)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test _Wno_shadow"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-Qsz8or"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-Qsz8or"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-JSueXx"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-JSueXx"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2207,11 +2297,15 @@ events:
       variable: "_Wno_shadow"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-Qsz8or'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-JSueXx'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_d52fe
-        [1/2] /usr/bin/c++ -D_Wno_shadow  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Wno-shadow -MD -MT CMakeFiles/cmTC_d52fe.dir/src.cxx.o -MF CMakeFiles/cmTC_d52fe.dir/src.cxx.o.d -o CMakeFiles/cmTC_d52fe.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-Qsz8or/src.cxx
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_d52fe.dir/src.cxx.o -o cmTC_d52fe   && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c589a/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c589a.dir/build.make CMakeFiles/cmTC_c589a.dir/build
+        Building CXX object CMakeFiles/cmTC_c589a.dir/src.cxx.o
+        /usr/bin/c++ -D_Wno_shadow  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64   -Wno-shadow -MD -MT CMakeFiles/cmTC_c589a.dir/src.cxx.o -MF CMakeFiles/cmTC_c589a.dir/src.cxx.o.d -o CMakeFiles/cmTC_c589a.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-JSueXx/src.cxx
+        Linking CXX executable cmTC_c589a
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c589a.dir/link.txt --verbose=1
+        /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib  CMakeFiles/cmTC_c589a.dir/src.cxx.o -o cmTC_c589a
         
       exitCode: 0
   -
@@ -2221,12 +2315,12 @@ events:
       - "/opt/homebrew/share/cmake/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:55 (check_cxx_source_compiles)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:72 (_verilator_check_cxx_libraries)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test _mt"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-8DfJn5"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-8DfJn5"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-xKhzkp"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-xKhzkp"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2239,17 +2333,20 @@ events:
       variable: "_mt"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-8DfJn5'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-xKhzkp'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_f46ae
-        [1/2] /usr/bin/c++ -D_mt  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -MD -MT CMakeFiles/cmTC_f46ae.dir/src.cxx.o -MF CMakeFiles/cmTC_f46ae.dir/src.cxx.o.d -o CMakeFiles/cmTC_f46ae.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-8DfJn5/src.cxx
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_f46ae.dir/src.cxx.o -o cmTC_f46ae  -mt && :
-        FAILED: [code=1] cmTC_f46ae 
-        : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_f46ae.dir/src.cxx.o -o cmTC_f46ae  -mt && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8accc/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8accc.dir/build.make CMakeFiles/cmTC_8accc.dir/build
+        Building CXX object CMakeFiles/cmTC_8accc.dir/src.cxx.o
+        /usr/bin/c++ -D_mt  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -MD -MT CMakeFiles/cmTC_8accc.dir/src.cxx.o -MF CMakeFiles/cmTC_8accc.dir/src.cxx.o.d -o CMakeFiles/cmTC_8accc.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-xKhzkp/src.cxx
+        Linking CXX executable cmTC_8accc
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8accc.dir/link.txt --verbose=1
         clang++: error: unknown argument: '-mt'
-        ninja: build stopped: subcommand failed.
+        /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib  CMakeFiles/cmTC_8accc.dir/src.cxx.o -o cmTC_8accc  -mt
+        make[1]: *** [cmTC_8accc] Error 1
+        make: *** [cmTC_8accc/fast] Error 2
         
-      exitCode: 1
+      exitCode: 2
   -
     kind: "try_compile-v1"
     backtrace:
@@ -2257,12 +2354,12 @@ events:
       - "/opt/homebrew/share/cmake/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:55 (check_cxx_source_compiles)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:72 (_verilator_check_cxx_libraries)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test _pthread"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-2YWZbp"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-2YWZbp"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-xYjPzf"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-xYjPzf"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2275,11 +2372,15 @@ events:
       variable: "_pthread"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-2YWZbp'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-xYjPzf'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_c265e
-        [1/2] /usr/bin/c++ -D_pthread  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -MD -MT CMakeFiles/cmTC_c265e.dir/src.cxx.o -MF CMakeFiles/cmTC_c265e.dir/src.cxx.o.d -o CMakeFiles/cmTC_c265e.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-2YWZbp/src.cxx
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_c265e.dir/src.cxx.o -o cmTC_c265e  -pthread && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1b344/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_1b344.dir/build.make CMakeFiles/cmTC_1b344.dir/build
+        Building CXX object CMakeFiles/cmTC_1b344.dir/src.cxx.o
+        /usr/bin/c++ -D_pthread  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -MD -MT CMakeFiles/cmTC_1b344.dir/src.cxx.o -MF CMakeFiles/cmTC_1b344.dir/src.cxx.o.d -o CMakeFiles/cmTC_1b344.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-xYjPzf/src.cxx
+        Linking CXX executable cmTC_1b344
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b344.dir/link.txt --verbose=1
+        /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib  CMakeFiles/cmTC_1b344.dir/src.cxx.o -o cmTC_1b344  -pthread
         
       exitCode: 0
   -
@@ -2289,12 +2390,12 @@ events:
       - "/opt/homebrew/share/cmake/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:55 (check_cxx_source_compiles)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:72 (_verilator_check_cxx_libraries)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test _lpthread"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-7zd8YX"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-7zd8YX"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-XqlEXX"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-XqlEXX"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2307,11 +2408,15 @@ events:
       variable: "_lpthread"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-7zd8YX'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-XqlEXX'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_203df
-        [1/2] /usr/bin/c++ -D_lpthread  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -MD -MT CMakeFiles/cmTC_203df.dir/src.cxx.o -MF CMakeFiles/cmTC_203df.dir/src.cxx.o.d -o CMakeFiles/cmTC_203df.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-7zd8YX/src.cxx
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_203df.dir/src.cxx.o -o cmTC_203df  -lpthread && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_45086/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_45086.dir/build.make CMakeFiles/cmTC_45086.dir/build
+        Building CXX object CMakeFiles/cmTC_45086.dir/src.cxx.o
+        /usr/bin/c++ -D_lpthread  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -MD -MT CMakeFiles/cmTC_45086.dir/src.cxx.o -MF CMakeFiles/cmTC_45086.dir/src.cxx.o.d -o CMakeFiles/cmTC_45086.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-XqlEXX/src.cxx
+        Linking CXX executable cmTC_45086
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45086.dir/link.txt --verbose=1
+        /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib  CMakeFiles/cmTC_45086.dir/src.cxx.o -o cmTC_45086  -lpthread
         
       exitCode: 0
   -
@@ -2321,12 +2426,12 @@ events:
       - "/opt/homebrew/share/cmake/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:55 (check_cxx_source_compiles)"
       - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:72 (_verilator_check_cxx_libraries)"
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     checks:
       - "Performing Test _latomic"
     directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-MmqLcG"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-MmqLcG"
+      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-xaKgv6"
+      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-xaKgv6"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -2339,22 +2444,25 @@ events:
       variable: "_latomic"
       cached: true
       stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-MmqLcG'
+        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-xaKgv6'
         
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_b6e16
-        [1/2] /usr/bin/c++ -D_latomic  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -MD -MT CMakeFiles/cmTC_b6e16.dir/src.cxx.o -MF CMakeFiles/cmTC_b6e16.dir/src.cxx.o.d -o CMakeFiles/cmTC_b6e16.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-MmqLcG/src.cxx
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_b6e16.dir/src.cxx.o -o cmTC_b6e16  -latomic && :
-        FAILED: [code=1] cmTC_b6e16 
-        : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_b6e16.dir/src.cxx.o -o cmTC_b6e16  -latomic && :
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5ecff/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5ecff.dir/build.make CMakeFiles/cmTC_5ecff.dir/build
+        Building CXX object CMakeFiles/cmTC_5ecff.dir/src.cxx.o
+        /usr/bin/c++ -D_latomic  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -MD -MT CMakeFiles/cmTC_5ecff.dir/src.cxx.o -MF CMakeFiles/cmTC_5ecff.dir/src.cxx.o.d -o CMakeFiles/cmTC_5ecff.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-xaKgv6/src.cxx
+        Linking CXX executable cmTC_5ecff
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ecff.dir/link.txt --verbose=1
         ld: library 'atomic' not found
         clang++: error: linker command failed with exit code 1 (use -v to see invocation)
-        ninja: build stopped: subcommand failed.
+        /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib  CMakeFiles/cmTC_5ecff.dir/src.cxx.o -o cmTC_5ecff  -latomic
+        make[1]: *** [cmTC_5ecff] Error 1
+        make: *** [cmTC_5ecff/fast] Error 2
         
-      exitCode: 1
+      exitCode: 2
   -
     kind: "find_package-v1"
     backtrace:
-      - "CMakeLists.txt:5 (find_package)"
+      - "CMakeLists.txt:4 (find_package)"
     name: "verilator"
     configs:
       -
@@ -2421,7 +2529,8 @@ events:
       version: "4.224"
     search_context:
       ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
+        - "/Users/anirudhsinghair/.gemini/antigravity-cli/bin"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -2444,6 +2553,7 @@ events:
         - "/opt/homebrew/bin"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
         - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/Users/anirudhsinghair/.local/bin"
         - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
         - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
         - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
@@ -2465,981 +2575,6 @@ events:
         - "/opt"
         - "/sw"
         - "/opt/local"
-      CMAKE_SYSTEM_FRAMEWORK_PATH:
-        - "~/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/Library/Frameworks"
-        - "/Library/Frameworks"
-        - "/Network/Library/Frameworks"
-        - "/System/Library/Frameworks"
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
-      - "/opt/homebrew/share/cmake/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
-      - "/opt/homebrew/share/cmake/Modules/FindThreads.cmake:162 (check_cxx_source_compiles)"
-      - "/opt/homebrew/share/cmake/Modules/FindThreads.cmake:226 (_threads_check_libc)"
-      - "CMakeLists.txt:9 (find_package)"
-    checks:
-      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
-    directories:
-      source: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-CT2c8I"
-      binary: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-CT2c8I"
-    cmakeVariables:
-      CMAKE_CXX_FLAGS: "-I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include"
-      CMAKE_CXX_FLAGS_DEBUG: "-g"
-      CMAKE_CXX_STDLIB_MODULES_JSON: ""
-      CMAKE_EXE_LINKER_FLAGS: "-L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib"
-      CMAKE_OSX_ARCHITECTURES: ""
-      CMAKE_OSX_DEPLOYMENT_TARGET: ""
-      CMAKE_OSX_SYSROOT: ""
-    buildResult:
-      variable: "CMAKE_HAVE_LIBC_PTHREAD"
-      cached: true
-      stdout: |
-        Change Dir: '/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-CT2c8I'
-        
-        Run Build Command(s): /opt/homebrew/bin/ninja -v cmTC_6ee5a
-        [1/2] /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -MD -MT CMakeFiles/cmTC_6ee5a.dir/src.cxx.o -MF CMakeFiles/cmTC_6ee5a.dir/src.cxx.o.d -o CMakeFiles/cmTC_6ee5a.dir/src.cxx.o -c /Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/CMakeScratch/TryCompile-CT2c8I/src.cxx
-        [2/2] : && /usr/bin/c++ -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include -I/opt/flex/flex-2.6.4/include -I/opt/bison/bison-3.7.91/share/include  -arch arm64 -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib -L/opt/flex/flex-2.6.4/lib -L/opt/bison/bison-3.7.91/lib CMakeFiles/cmTC_6ee5a.dir/src.cxx.o -o cmTC_6ee5a   && :
-        
-      exitCode: 0
-  -
-    kind: "find_package-v1"
-    backtrace:
-      - "CMakeLists.txt:12 (find_package)"
-    name: "SystemCLanguage"
-    configs:
-      -
-        filename: "SystemCLanguage.cps"
-        kind: "cps"
-      -
-        filename: "systemclanguage.cps"
-        kind: "cps"
-      -
-        filename: "SystemCLanguageConfig.cmake"
-        kind: "cmake"
-      -
-        filename: "systemclanguage-config.cmake"
-        kind: "cmake"
-    version_request:
-      exact: false
-    settings:
-      required: "optional"
-      quiet: false
-      global: false
-      policy_scope: true
-      bypass_provider: false
-      names:
-        - "SystemCLanguage"
-      path_suffixes:
-        - ""
-      paths:
-        CMAKE_FIND_USE_CMAKE_PATH: true
-        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-        CMAKE_FIND_USE_INSTALL_PREFIX: true
-        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
-        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
-        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
-        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
-    candidates:
-      -
-        path: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/pkgRedirects/SystemCLanguageConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/pkgRedirects/systemclanguage-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/pkgRedirects/lib64/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/pkgRedirects/lib64/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/pkgRedirects/lib/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/pkgRedirects/lib/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/pkgRedirects/share/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/build/CMakeFiles/pkgRedirects/share/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/SystemCLanguageConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/systemclanguage-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/lib64/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/lib64/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/lib/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/lib/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/share/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/share/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.antigravity/antigravity/SystemCLanguageConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.antigravity/antigravity/systemclanguage-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.antigravity/antigravity/lib64/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.antigravity/antigravity/lib64/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.antigravity/antigravity/lib/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.antigravity/antigravity/lib/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.antigravity/antigravity/share/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.antigravity/antigravity/share/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Developer/verilator-v4.224/SystemCLanguageConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Developer/verilator-v4.224/systemclanguage-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Developer/verilator-v4.224/lib64/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Developer/verilator-v4.224/lib64/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Developer/verilator-v4.224/lib/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Developer/verilator-v4.224/lib/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Developer/verilator-v4.224/share/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Developer/verilator-v4.224/share/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/flex/flex-2.6.4/SystemCLanguageConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/flex/flex-2.6.4/systemclanguage-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/flex/flex-2.6.4/lib64/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/flex/flex-2.6.4/lib64/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/flex/flex-2.6.4/lib/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/flex/flex-2.6.4/lib/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/flex/flex-2.6.4/share/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/flex/flex-2.6.4/share/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/bison/bison-3.7.91/SystemCLanguageConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/bison/bison-3.7.91/systemclanguage-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/bison/bison-3.7.91/lib64/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/bison/bison-3.7.91/lib64/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/bison/bison-3.7.91/lib/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/bison/bison-3.7.91/lib/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/bison/bison-3.7.91/share/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/bison/bison-3.7.91/share/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Python/3.9/SystemCLanguageConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Python/3.9/systemclanguage-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Python/3.9/lib64/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Python/3.9/lib64/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Python/3.9/lib/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Python/3.9/lib/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Python/3.9/share/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Python/3.9/share/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/SystemCLanguageConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/systemclanguage-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/lib64/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/lib64/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/SystemCLanguageConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/systemclanguage-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/lib64/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/lib64/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/SystemCLanguageConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/systemclanguage-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/local/lib64/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/lib64/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/lib/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/lib/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/share/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/local/share/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/System/Cryptexes/App/usr/SystemCLanguageConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/System/Cryptexes/App/usr/systemclanguage-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/System/Cryptexes/App/usr/lib64/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/System/Cryptexes/App/usr/lib64/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/System/Cryptexes/App/usr/lib/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/System/Cryptexes/App/usr/lib/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/System/Cryptexes/App/usr/share/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/System/Cryptexes/App/usr/share/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/SystemCLanguageConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/systemclanguage-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/usr/lib64/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib64/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/lib/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/share/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/usr/share/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/SystemCLanguageConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/systemclanguage-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/lib64/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/lib64/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/lib/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/lib/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/share/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/share/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/X11/SystemCLanguageConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/X11/systemclanguage-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/X11/lib64/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/X11/lib64/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/X11/lib/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/X11/lib/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/X11/share/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/X11/share/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/homebrew/SystemCLanguageConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/homebrew/systemclanguage-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/opt/homebrew/lib64/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/homebrew/lib64/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/homebrew/lib/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/homebrew/lib/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/homebrew/share/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/opt/homebrew/share/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/SystemCLanguageConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/systemclanguage-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/lib64/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/lib64/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/lib/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/lib/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/share/cps/SystemCLanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/share/cps/systemclanguage.cps"
-        mode: "cps"
-        reason: "no_exist"
-    found:
-      path: "/Users/anirudhsinghair/Developer/systemc-2.3.3/build/SystemCLanguageConfig.cmake"
-      mode: "config"
-      version: "2.3.3.20181013"
-    search_context:
-      ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
-        - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
-        - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
-        - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
-        - "/opt/flex/flex-2.6.4/bin"
-        - "/opt/bison/bison-3.7.91/bin"
-        - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
-        - "/Users/anirudhsinghair/Library/Python/3.9/bin"
-        - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/usr/local/bin"
-        - "/System/Cryptexes/App/usr/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/sbin"
-        - "/sbin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/opt/X11/bin"
-        - "/opt/homebrew/bin"
-        - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
-        - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
-        - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
-        - "/opt/flex/flex-2.6.4/bin"
-        - "/opt/bison/bison-3.7.91/bin"
-        - "/Users/anirudhsinghair/Library/Python/3.9/bin"
-        - "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
-        - "/opt/homebrew"
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/opt/homebrew"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-        - "/sw"
-        - "/opt/local"
-      CMAKE_SYSTEM_FRAMEWORK_PATH:
-        - "~/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/Library/Frameworks"
-        - "/Library/Frameworks"
-        - "/Network/Library/Frameworks"
-        - "/System/Library/Frameworks"
-...
-
----
-events:
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:362 (find_path)"
-      - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:416 (_verilator_find_systemc)"
-      - "CMakeLists.txt:33 (verilator_link_systemc)"
-    mode: "path"
-    variable: "SYSTEMC_INCLUDEDIR"
-    description: "Path to a file."
-    settings:
-      SearchFramework: "FIRST"
-      SearchAppBundle: "FIRST"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "systemc.h"
-    candidate_directories:
-      - "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/   /"
-      - "/Users/anirudhsinghair/miniconda3/bin/"
-      - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
-      - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
-      - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
-      - "/opt/flex/flex-2.6.4/bin/"
-      - "/opt/bison/bison-3.7.91/bin/"
-      - "/Users/anirudhsinghair/Library/Python/3.9/bin/"
-      - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/usr/local/bin/"
-      - "/System/Cryptexes/App/usr/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
-      - "/opt/X11/bin/"
-      - "/opt/homebrew/bin/"
-      - "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
-      - "/opt/homebrew/include/"
-      - "/opt/homebrew/"
-      - "/usr/local/include/"
-      - "/usr/local/"
-      - "/usr/include/"
-      - "/usr/"
-      - "/include/"
-      - "/usr/X11R6/include/"
-      - "/usr/X11R6/"
-      - "/usr/pkg/include/"
-      - "/usr/pkg/"
-      - "/opt/include/"
-      - "/opt/"
-      - "/sw/include/"
-      - "/sw/"
-      - "/opt/local/include/"
-      - "/opt/local/"
-      - "/usr/include/X11/"
-      - "/Users/anirudhsinghair/Library/Frameworks/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
-      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
-      - "/Library/Frameworks/"
-      - "/Network/Library/Frameworks/"
-      - "/System/Library/Frameworks/"
-    searched_directories:
-      - "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/   /systemc.h"
-      - "/Users/anirudhsinghair/miniconda3/bin/systemc.h"
-      - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/systemc.h"
-      - "/Users/anirudhsinghair/.antigravity/antigravity/bin/systemc.h"
-      - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/systemc.h"
-      - "/opt/flex/flex-2.6.4/bin/systemc.h"
-      - "/opt/bison/bison-3.7.91/bin/systemc.h"
-      - "/Users/anirudhsinghair/Library/Python/3.9/bin/systemc.h"
-      - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/systemc.h"
-      - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/systemc.h"
-      - "/usr/local/bin/systemc.h"
-      - "/System/Cryptexes/App/usr/bin/systemc.h"
-      - "/usr/bin/systemc.h"
-      - "/bin/systemc.h"
-      - "/usr/sbin/systemc.h"
-      - "/sbin/systemc.h"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/systemc.h"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/systemc.h"
-      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/systemc.h"
-      - "/opt/X11/bin/systemc.h"
-      - "/opt/homebrew/bin/systemc.h"
-      - "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/systemc.h"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/systemc.h"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/systemc.h"
-      - "/opt/homebrew/include/systemc.h"
-      - "/opt/homebrew/systemc.h"
-      - "/usr/local/include/systemc.h"
-      - "/usr/local/systemc.h"
-      - "/usr/include/systemc.h"
-      - "/usr/systemc.h"
-      - "/include/systemc.h"
-      - "/usr/X11R6/include/systemc.h"
-      - "/usr/X11R6/systemc.h"
-      - "/usr/pkg/include/systemc.h"
-      - "/usr/pkg/systemc.h"
-      - "/opt/include/systemc.h"
-      - "/opt/systemc.h"
-      - "/sw/include/systemc.h"
-      - "/sw/systemc.h"
-      - "/opt/local/include/systemc.h"
-      - "/opt/local/systemc.h"
-      - "/usr/include/X11/systemc.h"
-      - "/Users/anirudhsinghair/Library/Frameworks/systemc.h"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks/systemc.h"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks/systemc.h"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/systemc.h"
-      - "/Library/Developer/CommandLineTools/Library/Frameworks/systemc.h"
-      - "/Library/Frameworks/systemc.h"
-      - "/Network/Library/Frameworks/systemc.h"
-      - "/System/Library/Frameworks/systemc.h"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
-        - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
-        - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
-        - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
-        - "/opt/flex/flex-2.6.4/bin"
-        - "/opt/bison/bison-3.7.91/bin"
-        - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
-        - "/Users/anirudhsinghair/Library/Python/3.9/bin"
-        - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/usr/local/bin"
-        - "/System/Cryptexes/App/usr/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/sbin"
-        - "/sbin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/opt/X11/bin"
-        - "/opt/homebrew/bin"
-        - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
-        - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
-        - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
-        - "/opt/flex/flex-2.6.4/bin"
-        - "/opt/bison/bison-3.7.91/bin"
-        - "/Users/anirudhsinghair/Library/Python/3.9/bin"
-        - "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
-        - "/opt/homebrew"
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/opt/homebrew"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-        - "/sw"
-        - "/opt/local"
-      CMAKE_SYSTEM_INCLUDE_PATH:
-        - "/usr/include/X11"
-      CMAKE_SYSTEM_FRAMEWORK_PATH:
-        - "~/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/Library/Frameworks"
-        - "/Library/Developer/CommandLineTools/Library/Frameworks"
-        - "/Library/Frameworks"
-        - "/Network/Library/Frameworks"
-        - "/System/Library/Frameworks"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:379 (find_library)"
-      - "/Users/anirudhsinghair/Developer/verilator-v4.224/verilator-config.cmake:416 (_verilator_find_systemc)"
-      - "CMakeLists.txt:33 (verilator_link_systemc)"
-    mode: "library"
-    variable: "SYSTEMC_LIBRARY"
-    description: "Path to a library."
-    settings:
-      SearchFramework: "FIRST"
-      SearchAppBundle: "FIRST"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "systemc"
-    candidate_directories:
-      - "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/"
-      - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
-      - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
-      - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
-      - "/opt/flex/flex-2.6.4/bin/"
-      - "/opt/bison/bison-3.7.91/bin/"
-      - "/Users/anirudhsinghair/Library/Python/3.9/bin/"
-      - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/usr/local/bin/"
-      - "/System/Cryptexes/App/usr/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/opt/X11/bin/"
-      - "/opt/homebrew/bin/"
-      - "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
-      - "/opt/homebrew/lib/"
-      - "/opt/homebrew/"
-      - "/usr/local/lib/"
-      - "/usr/local/"
-      - "/usr/lib/"
-      - "/usr/"
-      - "/usr/X11R6/lib/"
-      - "/usr/X11R6/"
-      - "/opt/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
-      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
-      - "/Library/Frameworks/"
-      - "/System/Library/Frameworks/"
-    searched_directories:
-      - "/Users/anirudhsinghair/Documents/GitHub/2D-systolic-array/"
-      - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin/"
-      - "/Users/anirudhsinghair/.antigravity/antigravity/bin/"
-      - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin/"
-      - "/opt/flex/flex-2.6.4/bin/"
-      - "/opt/bison/bison-3.7.91/bin/"
-      - "/Users/anirudhsinghair/Library/Python/3.9/bin/"
-      - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/usr/local/bin/"
-      - "/System/Cryptexes/App/usr/bin/"
-      - "/usr/bin/"
-      - "/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/opt/X11/bin/"
-      - "/opt/homebrew/bin/"
-      - "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/"
-      - "/opt/homebrew/lib/"
-      - "/opt/homebrew/"
-      - "/usr/local/lib/"
-      - "/usr/local/"
-      - "/usr/lib/"
-      - "/usr/"
-      - "/usr/X11R6/lib/"
-      - "/usr/X11R6/"
-      - "/opt/"
-      - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/"
-      - "/Library/Developer/CommandLineTools/Library/Frameworks/"
-      - "/Library/Frameworks/"
-      - "/System/Library/Frameworks/"
-    found: false
-    search_context:
-      ENV{PATH}:
-        - "/Users/anirudhsinghair/miniconda3/bin"
-        - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
-        - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
-        - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
-        - "/opt/flex/flex-2.6.4/bin"
-        - "/opt/bison/bison-3.7.91/bin"
-        - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
-        - "/Users/anirudhsinghair/Library/Python/3.9/bin"
-        - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/usr/local/bin"
-        - "/System/Cryptexes/App/usr/bin"
-        - "/usr/bin"
-        - "/bin"
-        - "/usr/sbin"
-        - "/sbin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
-        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
-        - "/opt/X11/bin"
-        - "/opt/homebrew/bin"
-        - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/Users/anirudhsinghair/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/Users/anirudhsinghair/.antigravity-ide/antigravity-ide/bin"
-        - "/Users/anirudhsinghair/.antigravity/antigravity/bin"
-        - "/Users/anirudhsinghair/Developer/verilator-v4.224/bin"
-        - "/opt/flex/flex-2.6.4/bin"
-        - "/opt/bison/bison-3.7.91/bin"
-        - "/Users/anirudhsinghair/Library/Python/3.9/bin"
-        - "/Users/anirudhsinghair/.vscode/extensions/ms-python.debugpy-2026.6.0-darwin-arm64/bundled/scripts/noConfigScripts"
-      CMAKE_INSTALL_PREFIX: "/usr/local"
-      CMAKE_SYSTEM_PREFIX_PATH:
-        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
-        - "/opt/homebrew"
-        - "/usr/local"
-        - "/usr"
-        - "/"
-        - "/opt/homebrew"
-        - "/usr/local"
-        - "/usr/X11R6"
-        - "/usr/pkg"
-        - "/opt"
-        - "/sw"
-        - "/opt/local"
-      CMAKE_SYSTEM_LIBRARY_PATH:
-        - "/usr/lib/X11"
       CMAKE_SYSTEM_FRAMEWORK_PATH:
         - "~/Library/Frameworks"
         - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"

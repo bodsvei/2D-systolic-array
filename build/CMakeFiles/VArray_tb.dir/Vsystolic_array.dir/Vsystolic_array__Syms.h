@@ -1,4 +1,4 @@
-// Verilated -*- SystemC -*-
+// Verilated -*- C++ -*-
 // DESCRIPTION: Verilator output: Symbol table internal header
 //
 // Internal details; most calling programs do not need this header,
@@ -7,8 +7,6 @@
 #ifndef VERILATED_VSYSTOLIC_ARRAY__SYMS_H_
 #define VERILATED_VSYSTOLIC_ARRAY__SYMS_H_  // guard
 
-#include "systemc.h"
-#include "verilated_sc.h"
 #include "verilated.h"
 
 // INCLUDE MODEL CLASS
